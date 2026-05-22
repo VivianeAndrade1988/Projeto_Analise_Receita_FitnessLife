@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Projeto FitnessLife"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f437418f-851c-4a4f-a676-b353893bceb7"
+  }
+}

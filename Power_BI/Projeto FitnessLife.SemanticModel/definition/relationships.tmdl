@@ -1,0 +1,37 @@
+relationship AutoDetected_fde6e004-2a61-4f78-ab7a-c83ac3ffb560
+	fromColumn: vw_fato_receita.id_atividade
+	toColumn: vw_dim_atividades.id_atividade
+
+relationship AutoDetected_25fce38c-4599-413b-a0be-13463e532935
+	fromColumn: vw_fato_receita.id_plano
+	toColumn: vw_dim_plano.id_plano
+
+relationship 808c77e2-9c81-6273-79a3-563fa2b7bd4b
+	crossFilteringBehavior: bothDirections
+	fromColumn: vw_fato_receita.id_cliente
+	toColumn: vw_dim_clientes.id_cliente
+
+relationship 3ccbd7fa-2508-4f65-989f-4c4f0c0663e7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: vw_dim_clientes.data_cadastro
+	toColumn: LocalDateTable_f6932e7e-e5b8-49d0-8976-8f778a4301ba.Date
+
+relationship 22419450-cfc6-4093-8357-c6bc0865d1d3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: vw_dim_data.data
+	toColumn: LocalDateTable_08df9b87-96ee-4202-bf8a-0fdcc5093467.Date
+
+relationship 50e1cbe6-1ee6-2598-d124-9c8327e1466f
+	fromColumn: vw_fato_receita.data
+	toColumn: vw_dim_data.data
+
+relationship 8ee1590c-b2f3-42df-97e6-2044d96f46ad
+	joinOnDateBehavior: datePartOnly
+	fromColumn: vw_dim_clientes.data_cancelamento
+	toColumn: LocalDateTable_5d4f4a4c-b4d9-4a03-a54e-34b303423c2d.Date
+
+relationship 4a0484ae-f0fb-4723-9e00-148c4f3f4042
+	joinOnDateBehavior: datePartOnly
+	fromColumn: vw_fato_receita.'Safra Cliente'
+	toColumn: LocalDateTable_11a8fb9e-8d00-493e-bf19-61a6b8ed41b7.Date
+

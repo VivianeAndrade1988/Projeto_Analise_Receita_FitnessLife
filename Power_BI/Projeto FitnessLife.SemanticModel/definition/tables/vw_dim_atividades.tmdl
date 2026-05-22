@@ -1,0 +1,33 @@
+table vw_dim_atividades
+	lineageTag: e7387306-c006-4e74-9b58-d12fbe1a9066
+
+	column id_atividade
+		dataType: int64
+		formatString: 0
+		lineageTag: 5b1b6111-2a0d-487f-99cb-d02595ac1b70
+		summarizeBy: none
+		sourceColumn: id_atividade
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_atividade
+		dataType: string
+		lineageTag: b903a053-d23d-4532-98ea-e36b3a117054
+		summarizeBy: none
+		sourceColumn: tipo_atividade
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vw_dim_atividades = m
+		mode: import
+		source =
+				let
+				    Fonte = Sql.Database("LAPTOP-PCN678L7", "fitnesslife_dw"),
+				    dbo_vw_dim_atividades = Fonte{[Schema="dbo",Item="vw_dim_atividades"]}[Data]
+				in
+				    dbo_vw_dim_atividades
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

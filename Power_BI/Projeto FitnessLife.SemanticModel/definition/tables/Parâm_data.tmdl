@@ -1,0 +1,48 @@
+table Parâm_data
+	lineageTag: 01ecfff9-ba99-48f3-8ddc-a28562f3b799
+
+	column Parâm_data
+		lineageTag: e1b80e7a-2f4b-438f-bcc5-d585468053aa
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Parâm_data Pedido'
+
+		relatedColumnDetails
+			groupByColumn: 'Parâm_data Campos'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parâm_data Campos'
+		isHidden
+		lineageTag: a8adc673-6718-4b8a-9e1d-f769272e02aa
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Parâm_data Pedido'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parâm_data Pedido'
+		isHidden
+		formatString: 0
+		lineageTag: a071a1c9-cca2-4c17-a0ee-ae4d3cc0fed2
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Parâm_data = calculated
+		mode: import
+		source =
+				{
+				    ("Ano", NAMEOF('vw_dim_data'[ano]), 0),
+				    ("Mês", NAMEOF('vw_dim_data'[nome_mes]), 1)
+				}
+
+	annotation PBI_Id = cb0be065fdac4935a7c98a3258261e61
+

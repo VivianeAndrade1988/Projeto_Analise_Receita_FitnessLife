@@ -1,0 +1,6653 @@
+cultureInfo pt-BR
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "vw_dim_atividade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_atividades"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vw dim atividade": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vw_dim_atividades": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_atividade.id_atividade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_atividades",
+			          "ConceptualProperty": "id_atividade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id atividade": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_atividade": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification atividade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity atividade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier atividade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential atividade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_atividade.tipo_atividade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_atividades",
+			          "ConceptualProperty": "tipo_atividade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo atividade": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tipo_atividade": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_clientes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vw dim cliente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vw_dim_clientes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente.id_cliente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_clientes",
+			          "ConceptualProperty": "id_cliente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id cliente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_cliente": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification cliente": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity cliente": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier cliente": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential cliente": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente.nome_cliente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_clientes",
+			          "ConceptualProperty": "nome_cliente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome cliente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nome_cliente": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente.cidade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_clientes",
+			          "ConceptualProperty": "cidade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cidade": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente.data_cadastro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_clientes",
+			          "ConceptualProperty": "data_cadastro"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data cadastro": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data_cadastro": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information cadastro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact cadastro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info cadastro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic cadastro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document cadastro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure cadastro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record cadastro": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "vw_dim_cliente.data_cadastro.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_clientes",
+			          "VariationSource": "data_cadastro",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente.data_cadastro.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_clientes",
+			          "VariationSource": "data_cadastro",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data cadastro ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information cadastro ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact cadastro ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info cadastro ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic cadastro ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document cadastro ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure cadastro ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record cadastro ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente.data_cadastro.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_clientes",
+			          "VariationSource": "data_cadastro",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data cadastro trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information cadastro trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact cadastro trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info cadastro trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic cadastro trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document cadastro trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure cadastro trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record cadastro trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente.data_cadastro.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_clientes",
+			          "VariationSource": "data_cadastro",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data cadastro mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information cadastro mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact cadastro mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info cadastro mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic cadastro mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document cadastro mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure cadastro mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record cadastro mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente.data_cadastro.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_clientes",
+			          "VariationSource": "data_cadastro",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data cadastro dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information cadastro dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact cadastro dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info cadastro dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic cadastro dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document cadastro dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure cadastro dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record cadastro dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente.faixa_etaria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_clientes",
+			          "ConceptualProperty": "faixa_etaria"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "faixa etaria": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "faixa_etaria": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente.meses_fidelidade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_clientes",
+			          "ConceptualProperty": "meses_fidelidade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "meses fidelidade": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mese fidelidade": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "meses_fidelidade": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente.data_cancelamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_clientes",
+			          "ConceptualProperty": "data_cancelamento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data cancelamento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data_cancelamento": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information cancelamento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact cancelamento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info cancelamento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic cancelamento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document cancelamento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure cancelamento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record cancelamento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "vw_dim_cliente.data_cancelamento.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_clientes",
+			          "VariationSource": "data_cancelamento",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente.data_cancelamento.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_clientes",
+			          "VariationSource": "data_cancelamento",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data cancelamento ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information cancelamento ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact cancelamento ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info cancelamento ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic cancelamento ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document cancelamento ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure cancelamento ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record cancelamento ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente.data_cancelamento.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_clientes",
+			          "VariationSource": "data_cancelamento",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data cancelamento trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information cancelamento trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact cancelamento trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info cancelamento trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic cancelamento trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document cancelamento trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure cancelamento trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record cancelamento trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente.data_cancelamento.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_clientes",
+			          "VariationSource": "data_cancelamento",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data cancelamento mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information cancelamento mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact cancelamento mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info cancelamento mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic cancelamento mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document cancelamento mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure cancelamento mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record cancelamento mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente.data_cancelamento.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_clientes",
+			          "VariationSource": "data_cancelamento",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data cancelamento dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information cancelamento dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "fact cancelamento dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "info cancelamento dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "statistic cancelamento dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "document cancelamento dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "figure cancelamento dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "record cancelamento dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_plano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_plano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vw dim plano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vw_dim_plano": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "plano": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dim plano": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_plano.id_plano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_plano",
+			          "ConceptualProperty": "id_plano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id plano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_plano": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "plano": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "identification plano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity plano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier plano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential plano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_plano.nome_plano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_plano",
+			          "ConceptualProperty": "nome_plano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome plano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nome_plano": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "plano": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "vw_fato_receita": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_fato_receita"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vw fato receita": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vw_fato_receita": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "vw_fato_receita.id_cliente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_fato_receita",
+			          "ConceptualProperty": "id_cliente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "id cliente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_cliente": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification cliente": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity cliente": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier cliente": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential cliente": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "vw_fato_receita.id_plano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_fato_receita",
+			          "ConceptualProperty": "id_plano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "id plano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_plano": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "plano": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "identification plano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity plano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier plano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential plano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "vw_fato_receita.id_atividade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_fato_receita",
+			          "ConceptualProperty": "id_atividade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "id atividade": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_atividade": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification atividade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity atividade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier atividade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential atividade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "vw_fato_receita.data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_fato_receita",
+			          "ConceptualProperty": "data"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "vw_fato_receita.receita": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_fato_receita",
+			          "ConceptualProperty": "receita"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "receita": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.receita_total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Receita Total"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "receita total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "receita aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "receita overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.ticket_médio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Ticket Médio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ticket médio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.crescimento_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Crescimento %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "crescimento %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "crescimento percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "crescimento pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.qtd_total_de_clientes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "qtd total de clientes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd total de clientes": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtd aggregate de cliente": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "qtd overall de cliente": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "Total de clientes": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.receita_ano_anterior": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Receita ano anterior"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "receita ano anterior": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.variação_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Variação %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "variação %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "variação percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "variação pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.clientes_ano_anterior": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Clientes ano anterior"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "clientes ano anterior": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_data"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vw dim data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vw_dim_data": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dim data": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "vw dim information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "vw dim fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "vw dim info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "vw dim statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "dim information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dim fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dim info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dim statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "vw dim document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "vw dim figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_data.data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_data",
+			          "ConceptualProperty": "data"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "vw_dim_data.data.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_data",
+			          "VariationSource": "data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_data.data.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_data",
+			          "VariationSource": "data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_data.data.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_data",
+			          "VariationSource": "data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_data.data.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_data",
+			          "VariationSource": "data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_data.data.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_data",
+			          "VariationSource": "data",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "data dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statistic dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "document dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "figure dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "record dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_data.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_data",
+			          "ConceptualProperty": "ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_data.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_data",
+			          "ConceptualProperty": "mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "vw_dim_data.nome_me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "vw_dim_data",
+			          "ConceptualProperty": "nome_mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nome_mes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.insight_receita": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Insight Receita"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "insight receita": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.atividade_maior_queda": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Atividade Maior Queda"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "atividade maior queda": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.clientes_vs_ano_anterior": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "% clientes vs ano anterior"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% clientes vs ano anterior": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage cliente vs ano anterior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "pct cliente vs ano anterior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.ticket_medio_vs_ano_anterior": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "% ticket medio vs ano anterior"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% ticket medio vs ano anterior": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.cor_variação_crescimento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Cor Variação Crescimento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cor variação crescimento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.insight_clientes_e_ticket": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Insight Clientes e Ticket"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "insight clientes e ticket": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "insight cliente e coupon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "insight cliente e permit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "insight cliente e voucher": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "insight cliente e receipt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "insight cliente e marker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "insight cliente e sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "insight cliente e label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "insight cliente e tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "insight cliente e tab": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "insight cliente e docket": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.dummy_receita": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Dummy receita"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dummy receita": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.valor_detalhe_faturamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Valor detalhe Faturamento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor detalhe faturamento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.valor_coluna_faturamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Valor Coluna Faturamento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valor coluna faturamento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.cor_atividade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Cor Atividade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cor atividade": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.cor_rótulos_fat_vs_yoy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Cor Rótulos fat vs yoy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cor rótulos fat vs yoy": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.dummy_clientes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Dummy clientes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dummy clientes": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.cor_rótulos_clientes_vs_yoy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Cor Rótulos clientes vs yoy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cor rótulos clientes vs yoy": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.cor_rótulos_ticket_vs_yoy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Cor Rótulos ticket vs yoy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cor rótulos ticket vs yoy": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.dummy_ticket": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Dummy ticket"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dummy ticket": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ticket": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dummy coupon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "coupon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "dummy permit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "dummy voucher": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "dummy receipt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "permit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "voucher": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "receipt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "dummy marker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "dummy sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.insight_atividades": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Insight Atividades"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "insight atividades": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.recomendação_estratégica": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Recomendação Estratégica"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "recomendação estratégica": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.atividade_maior_crescimento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "Atividade Maior Crescimento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "atividade maior crescimento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.entity__dummy_receita_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "_Dummy receita FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_dummy receita FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.entity__dummy_clientes_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "_Dummy clientes FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_dummy clientes FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__medida.entity__dummy_ticket_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_medidas",
+			          "ConceptualProperty": "_Dummy ticket FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_dummy ticket FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "vw_dim_atividade_has_entity__medida_recomendação_estratégica": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_atividades"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_atividade": {
+			          "Target": {
+			            "Entity": "vw_dim_atividade"
+			          }
+			        },
+			        "entity__medida.recomendação_estratégica": {
+			          "Target": {
+			            "Entity": "entity__medida.recomendação_estratégica"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_atividade"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.recomendação_estratégica"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_atividades_have_recomendação_estratégica"
+			        }
+			      ]
+			    },
+			    "entity__medida_has_insight_atividades": {
+			      "Binding": {
+			        "ConceptualEntity": "_medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__medida": {
+			          "Target": {
+			            "Entity": "entity__medida"
+			          }
+			        },
+			        "entity__medida.insight_atividades": {
+			          "Target": {
+			            "Entity": "entity__medida.insight_atividades"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__medida"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.insight_atividades"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_medidas_have_insight_atividades"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_cor_rótulos_dif_rec_vs_yoy": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.cor_rótulos_dif_rec_vs_yoy": {
+			          "Target": {
+			            "Entity": "entity__medida.cor_rótulos_dif_rec_vs_yoy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cor_rótulos_dif_rec_vs_yoy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_cor_rótulos_dif_rec_vs_yoy"
+			        }
+			      ]
+			    },
+			    "entity__medida_has_dummy_ticket": {
+			      "Binding": {
+			        "ConceptualEntity": "_medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__medida": {
+			          "Target": {
+			            "Entity": "entity__medida"
+			          }
+			        },
+			        "entity__medida.dummy_ticket": {
+			          "Target": {
+			            "Entity": "entity__medida.dummy_ticket"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__medida"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.dummy_ticket"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_medidas_have_dummy_ticket"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_cor_rótulos_ticket_vs_yoy": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.cor_rótulos_ticket_vs_yoy": {
+			          "Target": {
+			            "Entity": "entity__medida.cor_rótulos_ticket_vs_yoy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cor_rótulos_ticket_vs_yoy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_cor_rótulos_ticket_vs_yoy"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_cor_rótulos_clientes_vs_yoy": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.cor_rótulos_clientes_vs_yoy": {
+			          "Target": {
+			            "Entity": "entity__medida.cor_rótulos_clientes_vs_yoy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cor_rótulos_clientes_vs_yoy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_cor_rótulos_clientes_vs_yoy"
+			        }
+			      ]
+			    },
+			    "entity__medida_has_dummy_clientes": {
+			      "Binding": {
+			        "ConceptualEntity": "_medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__medida": {
+			          "Target": {
+			            "Entity": "entity__medida"
+			          }
+			        },
+			        "entity__medida.dummy_clientes": {
+			          "Target": {
+			            "Entity": "entity__medida.dummy_clientes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__medida"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.dummy_clientes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_medidas_have_dummy_clientes"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_cor_rótulos_fat_vs_yoy": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.cor_rótulos_fat_vs_yoy": {
+			          "Target": {
+			            "Entity": "entity__medida.cor_rótulos_fat_vs_yoy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cor_rótulos_fat_vs_yoy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_cor_rótulos_fat_vs_yoy"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_cor_atividade": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.cor_atividade": {
+			          "Target": {
+			            "Entity": "entity__medida.cor_atividade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cor_atividade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_cor_atividade"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_valor_coluna_faturamento": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.valor_coluna_faturamento": {
+			          "Target": {
+			            "Entity": "entity__medida.valor_coluna_faturamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.valor_coluna_faturamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_valor_coluna_faturamento"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_valor_detalhe_faturamento": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.valor_detalhe_faturamento": {
+			          "Target": {
+			            "Entity": "entity__medida.valor_detalhe_faturamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.valor_detalhe_faturamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_valor_detalhe_faturamento"
+			        }
+			      ]
+			    },
+			    "entity__medida_has_dummy_receita": {
+			      "Binding": {
+			        "ConceptualEntity": "_medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__medida": {
+			          "Target": {
+			            "Entity": "entity__medida"
+			          }
+			        },
+			        "entity__medida.dummy_receita": {
+			          "Target": {
+			            "Entity": "entity__medida.dummy_receita"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__medida"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.dummy_receita"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_medidas_have_dummy_receita"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_x_insight_clientes_ticket": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.x_insight_clientes_ticket": {
+			          "Target": {
+			            "Entity": "entity__medida.x_insight_clientes_ticket"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.x_insight_clientes_ticket"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_x_insight_clientes_ticket"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_x_insight_receita_avançado": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.x_insight_receita_avançado": {
+			          "Target": {
+			            "Entity": "entity__medida.x_insight_receita_avançado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.x_insight_receita_avançado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_x_insight_receita_avançado"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_impacto_receita_executivo": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.impacto_receita_executivo": {
+			          "Target": {
+			            "Entity": "entity__medida.impacto_receita_executivo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.impacto_receita_executivo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_impacto_receita_executivo"
+			        }
+			      ]
+			    },
+			    "entity__medida_has_insight_Inteligente2": {
+			      "Binding": {
+			        "ConceptualEntity": "_medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__medida": {
+			          "Target": {
+			            "Entity": "entity__medida"
+			          }
+			        },
+			        "entity__medida.insight_Inteligente2": {
+			          "Target": {
+			            "Entity": "entity__medida.insight_Inteligente2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__medida"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.insight_Inteligente2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_medidas_have_insight_Inteligente2"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_insight_clientes_e_ticket": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.insight_clientes_e_ticket": {
+			          "Target": {
+			            "Entity": "entity__medida.insight_clientes_e_ticket"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.insight_clientes_e_ticket"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_insight_clientes_e_ticket"
+			        }
+			      ]
+			    },
+			    "vw_dim_data_has_entity__medida_insight_clientes_e_ticket": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_data": {
+			          "Target": {
+			            "Entity": "vw_dim_data"
+			          }
+			        },
+			        "entity__medida.insight_clientes_e_ticket": {
+			          "Target": {
+			            "Entity": "entity__medida.insight_clientes_e_ticket"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_data"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.insight_clientes_e_ticket"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_data_have_insight_clientes_e_ticket"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_cor_variação_crescimento": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.cor_variação_crescimento": {
+			          "Target": {
+			            "Entity": "entity__medida.cor_variação_crescimento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.cor_variação_crescimento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_cor_variação_crescimento"
+			        }
+			      ]
+			    },
+			    "entity__medida_has_insight_inteligente": {
+			      "Binding": {
+			        "ConceptualEntity": "_medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__medida": {
+			          "Target": {
+			            "Entity": "entity__medida"
+			          }
+			        },
+			        "entity__medida.insight_inteligente": {
+			          "Target": {
+			            "Entity": "entity__medida.insight_inteligente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__medida"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.insight_inteligente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_medidas_have_insight_inteligente"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_ticket_medio_vs_ano_anterior": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.ticket_medio_vs_ano_anterior": {
+			          "Target": {
+			            "Entity": "entity__medida.ticket_medio_vs_ano_anterior"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.ticket_medio_vs_ano_anterior"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have__ticket_medio_vs_ano_anterior"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_clientes_vs_ano_anterior": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.clientes_vs_ano_anterior": {
+			          "Target": {
+			            "Entity": "entity__medida.clientes_vs_ano_anterior"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.clientes_vs_ano_anterior"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have__clientes_vs_ano_anterior"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_x_insight_inteligente": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.x_insight_inteligente": {
+			          "Target": {
+			            "Entity": "entity__medida.x_insight_inteligente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.x_insight_inteligente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_x_insight_inteligente"
+			        }
+			      ]
+			    },
+			    "entity__medida_has_insight_atividade": {
+			      "Binding": {
+			        "ConceptualEntity": "_medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__medida": {
+			          "Target": {
+			            "Entity": "entity__medida"
+			          }
+			        },
+			        "entity__medida.insight_atividade": {
+			          "Target": {
+			            "Entity": "entity__medida.insight_atividade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__medida"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.insight_atividade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_medidas_have_insight_atividade"
+			        }
+			      ]
+			    },
+			    "entity__medida_has_percentual_maior_queda": {
+			      "Binding": {
+			        "ConceptualEntity": "_medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__medida": {
+			          "Target": {
+			            "Entity": "entity__medida"
+			          }
+			        },
+			        "entity__medida.percentual_maior_queda": {
+			          "Target": {
+			            "Entity": "entity__medida.percentual_maior_queda"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__medida"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.percentual_maior_queda"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_medidas_have_percentual_maior_queda"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_atividade_maior_queda": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.atividade_maior_queda": {
+			          "Target": {
+			            "Entity": "entity__medida.atividade_maior_queda"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.atividade_maior_queda"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_atividade_maior_queda"
+			        }
+			      ]
+			    },
+			    "vw_dim_atividade_has_entity__medida_atividade_maior_queda": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_atividades"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_atividade": {
+			          "Target": {
+			            "Entity": "vw_dim_atividade"
+			          }
+			        },
+			        "entity__medida.atividade_maior_queda": {
+			          "Target": {
+			            "Entity": "entity__medida.atividade_maior_queda"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_atividade"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.atividade_maior_queda"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_atividades_have_atividade_maior_queda"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_insight_receita": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.insight_receita": {
+			          "Target": {
+			            "Entity": "entity__medida.insight_receita"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.insight_receita"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_insight_receita"
+			        }
+			      ]
+			    },
+			    "vw_dim_data_has_entity__medida_insight_receita": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_data": {
+			          "Target": {
+			            "Entity": "vw_dim_data"
+			          }
+			        },
+			        "entity__medida.insight_receita": {
+			          "Target": {
+			            "Entity": "entity__medida.insight_receita"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_data"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.insight_receita"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_data_have_insight_receita"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_maior_queda_modalidade": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.maior_queda_modalidade": {
+			          "Target": {
+			            "Entity": "entity__medida.maior_queda_modalidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.maior_queda_modalidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_maior_queda_modalidade"
+			        }
+			      ]
+			    },
+			    "vw_dim_atividade_has_entity__medida_maior_queda_modalidade": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_atividades"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_atividade": {
+			          "Target": {
+			            "Entity": "vw_dim_atividade"
+			          }
+			        },
+			        "entity__medida.maior_queda_modalidade": {
+			          "Target": {
+			            "Entity": "entity__medida.maior_queda_modalidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_atividade"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.maior_queda_modalidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_atividades_have_maior_queda_modalidade"
+			        }
+			      ]
+			    },
+			    "vw_dim_data_has_nome_me": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_data": {
+			          "Target": {
+			            "Entity": "vw_dim_data"
+			          }
+			        },
+			        "vw_dim_data.nome_me": {
+			          "Target": {
+			            "Entity": "vw_dim_data.nome_me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_data"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_data.nome_me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_data_have_nome_me"
+			        }
+			      ]
+			    },
+			    "vw_dim_data_has_me": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_data": {
+			          "Target": {
+			            "Entity": "vw_dim_data"
+			          }
+			        },
+			        "vw_dim_data.me": {
+			          "Target": {
+			            "Entity": "vw_dim_data.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_data"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_data.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_data_have_me"
+			        }
+			      ]
+			    },
+			    "vw_dim_data_has_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_data": {
+			          "Target": {
+			            "Entity": "vw_dim_data"
+			          }
+			        },
+			        "vw_dim_data.ano": {
+			          "Target": {
+			            "Entity": "vw_dim_data.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_data"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_data_have_anos"
+			        }
+			      ]
+			    },
+			    "vw_dim_data_has_data": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_data": {
+			          "Target": {
+			            "Entity": "vw_dim_data"
+			          }
+			        },
+			        "vw_dim_data.data": {
+			          "Target": {
+			            "Entity": "vw_dim_data.data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_data"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_data.data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_data_have_data"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_clientes_ano_anterior": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.clientes_ano_anterior": {
+			          "Target": {
+			            "Entity": "entity__medida.clientes_ano_anterior"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.clientes_ano_anterior"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_clientes_ano_anterior"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_variação_": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.variação_": {
+			          "Target": {
+			            "Entity": "entity__medida.variação_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.variação_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_variação_"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_receita_ano_anterior": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.receita_ano_anterior": {
+			          "Target": {
+			            "Entity": "entity__medida.receita_ano_anterior"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.receita_ano_anterior"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_receita_ano_anterior"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_qtd_total_de_clientes": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.qtd_total_de_clientes": {
+			          "Target": {
+			            "Entity": "entity__medida.qtd_total_de_clientes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.qtd_total_de_clientes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_qtd_total_de_clientes"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_crescimento_": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.crescimento_": {
+			          "Target": {
+			            "Entity": "entity__medida.crescimento_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.crescimento_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_crescimento_"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_ticket_médio": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.ticket_médio": {
+			          "Target": {
+			            "Entity": "entity__medida.ticket_médio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.ticket_médio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_ticket_médio"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_receita_total": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.receita_total": {
+			          "Target": {
+			            "Entity": "entity__medida.receita_total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.receita_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_receita_total"
+			        }
+			      ]
+			    },
+			    "entity__medida_has_coluna_1": {
+			      "Binding": {
+			        "ConceptualEntity": "_medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__medida": {
+			          "Target": {
+			            "Entity": "entity__medida"
+			          }
+			        },
+			        "entity__medida.coluna_1": {
+			          "Target": {
+			            "Entity": "entity__medida.coluna_1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__medida"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.coluna_1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_medidas_have_coluna_1"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_receita": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "vw_fato_receita.receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita.receita"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "vw_fato_receita.receita"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_receitas"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_data": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "vw_fato_receita.data": {
+			          "Target": {
+			            "Entity": "vw_fato_receita.data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "vw_fato_receita.data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_data"
+			        }
+			      ]
+			    },
+			    "vw_dim_plano_has_nome_plano": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_plano"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_plano": {
+			          "Target": {
+			            "Entity": "vw_dim_plano"
+			          }
+			        },
+			        "vw_dim_plano.nome_plano": {
+			          "Target": {
+			            "Entity": "vw_dim_plano.nome_plano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_plano"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_plano.nome_plano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_plano_have_nome_plano"
+			        }
+			      ]
+			    },
+			    "vw_dim_plano_has_id_plano": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_plano"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_plano": {
+			          "Target": {
+			            "Entity": "vw_dim_plano"
+			          }
+			        },
+			        "vw_dim_plano.id_plano": {
+			          "Target": {
+			            "Entity": "vw_dim_plano.id_plano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_plano"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_plano.id_plano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_plano_have_id_plano"
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente_has_data_cancelamento": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_cliente": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente"
+			          }
+			        },
+			        "vw_dim_cliente.data_cancelamento": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cancelamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cancelamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_clientes_have_data_cancelamentos"
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente_has_meses_fidelidade": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_cliente": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente"
+			          }
+			        },
+			        "vw_dim_cliente.meses_fidelidade": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.meses_fidelidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.meses_fidelidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_clientes_have_meses_fidelidades"
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente_has_faixa_etaria": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_cliente": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente"
+			          }
+			        },
+			        "vw_dim_cliente.faixa_etaria": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.faixa_etaria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.faixa_etaria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_clientes_have_faixa_etarias"
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente_has_data_cadastro": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_cliente": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente"
+			          }
+			        },
+			        "vw_dim_cliente.data_cadastro": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cadastro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cadastro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_clientes_have_data_cadastros"
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente_has_cidade": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_cliente": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente"
+			          }
+			        },
+			        "vw_dim_cliente.cidade": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.cidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.cidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_clientes_have_cidades"
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente_has_nome_cliente": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_cliente": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente"
+			          }
+			        },
+			        "vw_dim_cliente.nome_cliente": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.nome_cliente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.nome_cliente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_clientes_have_nome_clientes"
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente_has_id_cliente": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_cliente": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente"
+			          }
+			        },
+			        "vw_dim_cliente.id_cliente": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.id_cliente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.id_cliente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_clientes_have_id_clientes"
+			        }
+			      ]
+			    },
+			    "vw_dim_atividade_has_tipo_atividade": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_atividades"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_atividade": {
+			          "Target": {
+			            "Entity": "vw_dim_atividade"
+			          }
+			        },
+			        "vw_dim_atividade.tipo_atividade": {
+			          "Target": {
+			            "Entity": "vw_dim_atividade.tipo_atividade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_atividade"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_atividade.tipo_atividade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_atividades_have_tipo_atividades"
+			        }
+			      ]
+			    },
+			    "vw_dim_atividade_has_id_atividade": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_atividades"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_atividade": {
+			          "Target": {
+			            "Entity": "vw_dim_atividade"
+			          }
+			        },
+			        "vw_dim_atividade.id_atividade": {
+			          "Target": {
+			            "Entity": "vw_dim_atividade.id_atividade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_atividade"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_atividade.id_atividade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_atividades_have_id_atividades"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_recomendação_estratégica": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.recomendação_estratégica": {
+			          "Target": {
+			            "Entity": "entity__medida.recomendação_estratégica"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.recomendação_estratégica"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_recomendação_estratégica"
+			        }
+			      ]
+			    },
+			    "vw_dim_atividade_has_entity__medida_atividade_maior_crescimento": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_atividades"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_atividade": {
+			          "Target": {
+			            "Entity": "vw_dim_atividade"
+			          }
+			        },
+			        "entity__medida.atividade_maior_crescimento": {
+			          "Target": {
+			            "Entity": "entity__medida.atividade_maior_crescimento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_atividade"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.atividade_maior_crescimento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_atividades_have_atividade_maior_crescimento"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_entity__medida_atividade_maior_crescimento": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "entity__medida.atividade_maior_crescimento": {
+			          "Target": {
+			            "Entity": "entity__medida.atividade_maior_crescimento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "entity__medida.atividade_maior_crescimento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_atividade_maior_crescimento"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_vw_dim_atividade": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "vw_dim_atividade": {
+			          "Target": {
+			            "Entity": "vw_dim_atividade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_atividade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_vw_dim_atividades"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_atividade"
+			            },
+			            "Object": {
+			              "Role": "vw_fato_receita"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_atividades_have_vw_fato_receitas"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_vw_dim_plano": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "vw_dim_plano": {
+			          "Target": {
+			            "Entity": "vw_dim_plano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_plano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_vw_dim_plano"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_plano"
+			            },
+			            "Object": {
+			              "Role": "vw_fato_receita"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_plano_have_vw_fato_receitas"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_vw_dim_cliente": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "vw_dim_cliente": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_vw_dim_clientes"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente"
+			            },
+			            "Object": {
+			              "Role": "vw_fato_receita"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_clientes_have_vw_fato_receitas"
+			        }
+			      ]
+			    },
+			    "vw_fato_receita_has_vw_dim_data": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_fato_receita"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_fato_receita": {
+			          "Target": {
+			            "Entity": "vw_fato_receita"
+			          }
+			        },
+			        "vw_dim_data": {
+			          "Target": {
+			            "Entity": "vw_dim_data"
+			          },
+			          "Nouns": [
+			            {
+			              "data": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_fato_receita"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_fato_receitas_have_vw_dim_data"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_data"
+			            },
+			            "Object": {
+			              "Role": "vw_fato_receita"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vw_dim_data_have_vw_fato_receitas"
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente_data_cadastro_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_cliente.data_cadastro": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cadastro"
+			          }
+			        },
+			        "vw_dim_cliente.data_cadastro.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cadastro.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cadastro"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cadastro.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_cadastros_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente_data_cadastro_hierarquia_de_data_has_vw_dim_cliente_data_cadastro_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_cliente.data_cadastro.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cadastro.hierarquia_de_data"
+			          }
+			        },
+			        "vw_dim_cliente.data_cadastro.ano": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cadastro.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cadastro.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cadastro.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos"
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente_data_cadastro_hierarquia_de_data_has_vw_dim_cliente_data_cadastro_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_cliente.data_cadastro.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cadastro.hierarquia_de_data"
+			          }
+			        },
+			        "vw_dim_cliente.data_cadastro.trimestre": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cadastro.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cadastro.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cadastro.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres"
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente_data_cadastro_hierarquia_de_data_has_vw_dim_cliente_data_cadastro_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_cliente.data_cadastro.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cadastro.hierarquia_de_data"
+			          }
+			        },
+			        "vw_dim_cliente.data_cadastro.mê": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cadastro.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cadastro.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cadastro.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê"
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente_data_cadastro_hierarquia_de_data_has_vw_dim_cliente_data_cadastro_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_cliente.data_cadastro.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cadastro.hierarquia_de_data"
+			          }
+			        },
+			        "vw_dim_cliente.data_cadastro.dia": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cadastro.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cadastro.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cadastro.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias"
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente_data_cadastro_ano_has_vw_dim_cliente_data_cadastro_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_cliente.data_cadastro.ano": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cadastro.ano"
+			          }
+			        },
+			        "vw_dim_cliente.data_cadastro.trimestre": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cadastro.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cadastro.ano"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cadastro.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cadastro.trimestre"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cadastro.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cadastro.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cadastro.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos"
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente_data_cadastro_trimestre_has_vw_dim_cliente_data_cadastro_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_cliente.data_cadastro.trimestre": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cadastro.trimestre"
+			          }
+			        },
+			        "vw_dim_cliente.data_cadastro.mê": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cadastro.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cadastro.trimestre"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cadastro.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cadastro.mê"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cadastro.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cadastro.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cadastro.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres"
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente_data_cadastro_mê_has_vw_dim_cliente_data_cadastro_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_cliente.data_cadastro.mê": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cadastro.mê"
+			          }
+			        },
+			        "vw_dim_cliente.data_cadastro.dia": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cadastro.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cadastro.mê"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cadastro.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cadastro.dia"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cadastro.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cadastro.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cadastro.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê"
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente_data_cancelamento_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_cliente.data_cancelamento": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cancelamento"
+			          }
+			        },
+			        "vw_dim_cliente.data_cancelamento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cancelamento.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cancelamento"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cancelamento.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_cancelamentos_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente_data_cancelamento_hierarquia_de_data_has_vw_dim_cliente_data_cancelamento_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_cliente.data_cancelamento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cancelamento.hierarquia_de_data"
+			          }
+			        },
+			        "vw_dim_cliente.data_cancelamento.ano": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cancelamento.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cancelamento.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cancelamento.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos1"
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente_data_cancelamento_hierarquia_de_data_has_vw_dim_cliente_data_cancelamento_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_cliente.data_cancelamento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cancelamento.hierarquia_de_data"
+			          }
+			        },
+			        "vw_dim_cliente.data_cancelamento.trimestre": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cancelamento.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cancelamento.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cancelamento.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres1"
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente_data_cancelamento_hierarquia_de_data_has_vw_dim_cliente_data_cancelamento_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_cliente.data_cancelamento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cancelamento.hierarquia_de_data"
+			          }
+			        },
+			        "vw_dim_cliente.data_cancelamento.mê": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cancelamento.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cancelamento.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cancelamento.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê1"
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente_data_cancelamento_hierarquia_de_data_has_vw_dim_cliente_data_cancelamento_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_cliente.data_cancelamento.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cancelamento.hierarquia_de_data"
+			          }
+			        },
+			        "vw_dim_cliente.data_cancelamento.dia": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cancelamento.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cancelamento.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cancelamento.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias1"
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente_data_cancelamento_ano_has_vw_dim_cliente_data_cancelamento_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_cliente.data_cancelamento.ano": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cancelamento.ano"
+			          }
+			        },
+			        "vw_dim_cliente.data_cancelamento.trimestre": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cancelamento.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cancelamento.ano"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cancelamento.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cancelamento.trimestre"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cancelamento.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cancelamento.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cancelamento.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos1"
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente_data_cancelamento_trimestre_has_vw_dim_cliente_data_cancelamento_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_cliente.data_cancelamento.trimestre": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cancelamento.trimestre"
+			          }
+			        },
+			        "vw_dim_cliente.data_cancelamento.mê": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cancelamento.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cancelamento.trimestre"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cancelamento.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cancelamento.mê"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cancelamento.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cancelamento.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cancelamento.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres1"
+			        }
+			      ]
+			    },
+			    "vw_dim_cliente_data_cancelamento_mê_has_vw_dim_cliente_data_cancelamento_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_clientes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_cliente.data_cancelamento.mê": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cancelamento.mê"
+			          }
+			        },
+			        "vw_dim_cliente.data_cancelamento.dia": {
+			          "Target": {
+			            "Entity": "vw_dim_cliente.data_cancelamento.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cancelamento.mê"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cancelamento.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cancelamento.dia"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cancelamento.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê1"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "vw_dim_cliente.data_cancelamento.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "vw_dim_cliente.data_cancelamento.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê1"
+			        }
+			      ]
+			    },
+			    "vw_dim_data_data_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_data.data": {
+			          "Target": {
+			            "Entity": "vw_dim_data.data"
+			          }
+			        },
+			        "vw_dim_data.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "vw_dim_data.data.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_data.data"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_data.data.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "data_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "vw_dim_data_data_hierarquia_de_data_has_vw_dim_data_data_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_data.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "vw_dim_data.data.hierarquia_de_data"
+			          }
+			        },
+			        "vw_dim_data.data.ano": {
+			          "Target": {
+			            "Entity": "vw_dim_data.data.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_data.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_data.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos3"
+			        }
+			      ]
+			    },
+			    "vw_dim_data_data_hierarquia_de_data_has_vw_dim_data_data_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_data.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "vw_dim_data.data.hierarquia_de_data"
+			          }
+			        },
+			        "vw_dim_data.data.trimestre": {
+			          "Target": {
+			            "Entity": "vw_dim_data.data.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_data.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_data.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres3"
+			        }
+			      ]
+			    },
+			    "vw_dim_data_data_hierarquia_de_data_has_vw_dim_data_data_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_data.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "vw_dim_data.data.hierarquia_de_data"
+			          }
+			        },
+			        "vw_dim_data.data.mê": {
+			          "Target": {
+			            "Entity": "vw_dim_data.data.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_data.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_data.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê3"
+			        }
+			      ]
+			    },
+			    "vw_dim_data_data_hierarquia_de_data_has_vw_dim_data_data_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_data.data.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "vw_dim_data.data.hierarquia_de_data"
+			          }
+			        },
+			        "vw_dim_data.data.dia": {
+			          "Target": {
+			            "Entity": "vw_dim_data.data.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_data.data.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_data.data.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias3"
+			        }
+			      ]
+			    },
+			    "vw_dim_data_data_ano_has_vw_dim_data_data_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_data.data.ano": {
+			          "Target": {
+			            "Entity": "vw_dim_data.data.ano"
+			          }
+			        },
+			        "vw_dim_data.data.trimestre": {
+			          "Target": {
+			            "Entity": "vw_dim_data.data.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_data.data.ano"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_data.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres3"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_data.data.trimestre"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_data.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos3"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "vw_dim_data.data.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "vw_dim_data.data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos3"
+			        }
+			      ]
+			    },
+			    "vw_dim_data_data_trimestre_has_vw_dim_data_data_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_data.data.trimestre": {
+			          "Target": {
+			            "Entity": "vw_dim_data.data.trimestre"
+			          }
+			        },
+			        "vw_dim_data.data.mê": {
+			          "Target": {
+			            "Entity": "vw_dim_data.data.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_data.data.trimestre"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_data.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê3"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_data.data.mê"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_data.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres3"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "vw_dim_data.data.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "vw_dim_data.data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres3"
+			        }
+			      ]
+			    },
+			    "vw_dim_data_data_mê_has_vw_dim_data_data_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "vw_dim_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "vw_dim_data.data.mê": {
+			          "Target": {
+			            "Entity": "vw_dim_data.data.mê"
+			          }
+			        },
+			        "vw_dim_data.data.dia": {
+			          "Target": {
+			            "Entity": "vw_dim_data.data.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_data.data.mê"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_data.data.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias3"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "vw_dim_data.data.dia"
+			            },
+			            "Object": {
+			              "Role": "vw_dim_data.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê3"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "vw_dim_data.data.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "vw_dim_data.data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê3"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

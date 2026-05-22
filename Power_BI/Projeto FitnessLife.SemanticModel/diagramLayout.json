@@ -1,0 +1,126 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 358.85713849748885,
+        "y": 3073.1427873883931
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 197.14285714285717,
+            "y": 3112.715680803572
+          },
+          "nodeIndex": "vw_dim_atividades",
+          "nodeLineageTag": "e7387306-c006-4e74-9b58-d12fbe1a9066",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 842.57142857142856,
+            "y": 3519.8585379464289
+          },
+          "nodeIndex": "vw_dim_clientes",
+          "nodeLineageTag": "cccd1d63-9c44-49d9-80c0-c9938c62b00a",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 852,
+            "y": 3112.715680803572
+          },
+          "nodeIndex": "vw_dim_plano",
+          "nodeLineageTag": "97c6edd6-5cbc-4cc9-9106-98ed1d1b9f05",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 510.28571428571433,
+            "y": 3229.8585379464289
+          },
+          "nodeIndex": "vw_fato_receita",
+          "nodeLineageTag": "19f6bc75-1b51-4bba-8f38-348559165227",
+          "size": {
+            "height": 223.71428571428567,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 1263.7142857142858,
+            "y": 3800.4299665178573
+          },
+          "nodeIndex": "_medidas",
+          "nodeLineageTag": "8299e954-4881-4346-9676-4205fee524ca",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 380,
+            "y": 3560.9299665178573
+          },
+          "nodeIndex": "vw_dim_data",
+          "nodeLineageTag": "81d85e86-d31b-4ecc-9e58-7e9174886803",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1350.5714285714287,
+            "y": 1745.2659040178573
+          },
+          "nodeIndex": "Parâmetro",
+          "nodeLineageTag": "87788e4a-d311-433c-a92e-89a2b5914988",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1437.4285714285716,
+            "y": 1585.3373325892858
+          },
+          "nodeIndex": "Parâm_data",
+          "nodeLineageTag": "01ecfff9-ba99-48f3-8ddc-a28562f3b799",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 70,
+      "pinKeyFieldsToTop": true,
+      "showExtraHeaderInfo": true,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}

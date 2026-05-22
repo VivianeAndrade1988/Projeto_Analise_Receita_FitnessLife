@@ -1,0 +1,997 @@
+table _medidas
+	lineageTag: 8299e954-4881-4346-9676-4205fee524ca
+
+	measure 'Receita Total' = sum(vw_fato_receita[receita])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		displayFolder: _GERAL
+		lineageTag: f7c9e5d5-8b2d-4b1c-8eae-f1bd32f494c1
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Ticket Médio' = DIVIDE([Receita Total],[qtd total de clientes])
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		displayFolder: _GERAL
+		lineageTag: 864a98b8-fd3a-43e0-9909-6295879a89b2
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Crescimento %' =
+			
+			DIVIDE([Receita Total]-[Receita ano anterior],[Receita ano anterior])
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: _GERAL
+		lineageTag: a1b0477e-5d46-47ad-a000-c3cc0ac01a33
+
+	measure 'qtd total de clientes' = DISTINCTCOUNT(vw_fato_receita[id_cliente])
+		formatString: 0
+		displayFolder: _GERAL
+		lineageTag: a9a87ab7-6a00-4cb0-9fe7-56e9ca79e052
+
+	measure 'Receita ano anterior' = ```
+			CALCULATE(
+			    [Receita Total],
+			    DATEADD(vw_dim_data[data],-1,YEAR)
+			)
+			
+			```
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		displayFolder: _GERAL
+		lineageTag: 06d5234c-218e-4a10-a768-f73c28498d42
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Variação %' = ```
+			
+			
+			VAR ReceitaAtual =
+			    SUM(vw_fato_receita[receita])
+			
+			VAR ReceitaAnterior =
+			    CALCULATE(
+			        SUM(vw_fato_receita[receita]),
+			        SAMEPERIODLASTYEAR(vw_dim_data[data])
+			    )
+			
+			RETURN
+			
+			DIVIDE(
+			    ReceitaAtual - ReceitaAnterior,
+			    ReceitaAnterior
+			)
+			
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: _GERAL
+		lineageTag: 5abe2190-e3b1-4615-948c-e2aef86b03f1
+
+	measure 'Clientes ano anterior' =
+			CALCULATE(
+			    [qtd total de clientes],
+			    DATEADD(vw_dim_data[data],-1,YEAR)
+			)
+		formatString: 0
+		displayFolder: _GERAL
+		lineageTag: f3e90045-5525-4e58-931f-fc57ddfee95d
+
+	measure 'Insight Receita' =
+			
+			
+			VAR Variacao = [Crescimento %]
+			
+			VAR AnoAtual =
+			    SELECTEDVALUE(vw_dim_data[ano])
+			
+			VAR AnoAnterior =
+			    AnoAtual - 1
+			
+			RETURN
+			
+			IF(
+			    Variacao > 0,
+			
+			    "🟢 A receita apresentou crescimento de " &
+			    FORMAT(Variacao, "00%") &
+			    " em " &
+			    AnoAtual &
+			    " comparado a " &
+			    AnoAnterior &
+			    ".",
+			
+			    "🔴 A receita apresentou queda de " &
+			    FORMAT(ABS(Variacao), "00%") &
+			    " em " &
+			    AnoAtual &
+			    " comparado a " &
+			    AnoAnterior &
+			    "."
+			)
+		displayFolder: _INSIGHTS
+		lineageTag: d64ea8d2-ec4c-4440-ad74-d92b5dcbac88
+
+	measure 'Atividade Maior Queda' =
+			
+			
+			VAR TabelaModalidade =
+			    ADDCOLUMNS(
+			        VALUES(vw_dim_atividades[tipo_atividade]),
+			        "@Variacao", [Crescimento %]
+			    )
+			
+			VAR MenorValor =
+			    MINX(TabelaModalidade, [@Variacao])
+			
+			RETURN
+			    MAXX(
+			        FILTER(
+			            TabelaModalidade,
+			            [@Variacao] = MenorValor
+			        ),
+			        vw_dim_atividades[tipo_atividade]
+			    )
+		displayFolder: _UX
+		lineageTag: 23cd1c5c-f7bc-4f8b-a674-14925db86e3b
+
+	measure '% clientes vs ano anterior' =
+			
+			
+			var vcliente= [qtd total de clientes]
+			var vcliente_ano_anterior = CALCULATE(
+			    [qtd total de clientes],
+			    SAMEPERIODLASTYEAR(vw_dim_data[data])
+			)
+			
+			return
+			
+			DIVIDE(
+			    vcliente-[Clientes ano anterior],
+			    [Clientes ano anterior])
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: _UX
+		lineageTag: 360a652d-d557-4e69-bc68-11d1ffc9cac3
+
+	measure '% ticket medio vs ano anterior' =
+			
+			
+			var vticket_medio= [Ticket Médio]
+			var vticket_medio_ano_anterior = CALCULATE(
+			    [Ticket Médio],
+			    SAMEPERIODLASTYEAR(vw_dim_data[data])
+			)
+			
+			return
+			
+			DIVIDE(
+			    vticket_medio-vticket_medio_ano_anterior,
+			    vticket_medio_ano_anterior)
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: _GERAL
+		lineageTag: 705f0c23-3b76-4870-89d9-20fcc0e141eb
+
+	measure 'Cor Variação Crescimento' =
+			
+			
+			IF(
+			    [Variação %] > 0,
+			    "#098D84",
+			    "#D65C5C"    -- verde
+			)
+		displayFolder: _UX
+		lineageTag: fd8c86b7-35f5-4611-9316-afd5ce63da09
+
+	measure 'Insight Clientes e Ticket' =
+			
+			
+			VAR VarClientes =
+			    [% clientes vs ano anterior]
+			
+			VAR VarTicket =
+			    [% ticket medio vs ano anterior]
+			
+			VAR AnoAtual =
+			    SELECTEDVALUE(vw_dim_data[ano])
+			
+			VAR AnoAnterior =
+			    AnoAtual - 1
+			
+			RETURN
+			
+			SWITCH(
+			
+			    TRUE(),
+			
+			    //-------------------------------------------------
+			    -- CLIENTES SOBEM / TICKET CAI
+			    //-------------------------------------------------
+			
+			    VarClientes > 0
+			    && VarTicket < 0,
+			
+			    "📊 A base de clientes aumentou " &
+			    FORMAT(ABS(VarClientes), "0,0%") &
+			    ", enquanto o ticket médio reduziu " &
+			    FORMAT(ABS(VarTicket), "0,0%") &
+			    " em relação a " &
+			    AnoAnterior & ".",
+			
+			
+			    //-------------------------------------------------
+			    -- CLIENTES SOBEM / TICKET SOBE
+			    //-------------------------------------------------
+			
+			    VarClientes > 0
+			    && VarTicket > 0,
+			
+			    "📈 A base de clientes aumentou " &
+			    FORMAT(ABS(VarClientes), "0,0%") &
+			    " e o ticket médio cresceu " &
+			    FORMAT(ABS(VarTicket), "0,0%") &
+			    " em relação a " &
+			    AnoAnterior & ".",
+			
+			
+			    //-------------------------------------------------
+			    -- CLIENTES CAEM / TICKET SOBE
+			    //-------------------------------------------------
+			
+			    VarClientes < 0
+			    && VarTicket > 0,
+			
+			    "📉 A base de clientes reduziu " &
+			    FORMAT(ABS(VarClientes), "0,0%") &
+			    ", enquanto o ticket médio aumentou " &
+			    FORMAT(ABS(VarTicket), "0,0%") &
+			    " em relação a " &
+			    AnoAnterior & ".",
+			
+			
+			    //-------------------------------------------------
+			    -- CLIENTES CAEM / TICKET CAI
+			    //-------------------------------------------------
+			
+			    VarClientes < 0
+			    && VarTicket < 0,
+			
+			    "📉 Tanto a base de clientes quanto o ticket médio apresentaram retração em relação a " &
+			    AnoAnterior & ".",
+			
+			
+			    //-------------------------------------------------
+			    -- PADRÃO
+			    //-------------------------------------------------
+			
+			    "📊 Os indicadores apresentaram comportamento estável."
+			)
+		displayFolder: _INSIGHTS
+		lineageTag: bacd6a4a-acee-4ea6-8c39-f6dc847d3b7d
+
+	measure 'Dummy receita' = 0
+		displayFolder: _CARTÃO
+		lineageTag: e08e90e7-1118-456f-818f-f80b3cb1a2cb
+
+		formatStringDefinition = ```
+				Var vReceitavsYoY= FORMAT([Crescimento %],
+				"⇧ 0% ;⇩ 0% ")
+				RETURN
+				"""" &
+				vReceitavsYoY &
+				""""
+				
+				```
+
+	measure 'Valor detalhe Faturamento' =
+			FORMAT([Crescimento %],
+			"⇧ 0% ;⇩ 0% ")
+		displayFolder: _UX
+		lineageTag: d0d0d022-ab6d-40b1-a129-361d18885f75
+
+	measure 'Valor Coluna Faturamento' = ```
+			
+			VAR vFat = [Receita Total]
+			VAR vFatFormat = 
+			SWITCH(
+			    TRUE(),
+			    vFat > 1E6, FORMAT(vFat /1000000, "#,0.0 Mi"),
+			    vFat > 1E3, FORMAT(vFat, "#,0, K"),
+			    FORMAT(vFat, "#,0")
+			)
+			RETURN
+			vFatFormat
+			```
+		displayFolder: _UX
+		lineageTag: 7966a020-ae15-442e-8ae7-6f6a51eccefc
+
+	measure 'Cor Atividade' =
+			
+			
+			VAR VarReceita =
+			    [Crescimento %]
+			
+			//-----------------------------------------
+			// RECEITA DA ATIVIDADE ATUAL
+			//-----------------------------------------
+			
+			VAR ReceitaAtual =
+			    [Receita Total]
+			
+			VAR ImpactoAtual =
+			    [Receita Total] - [Receita Ano Anterior]
+			
+			//-----------------------------------------
+			// MAIOR FATURAMENTO
+			//-----------------------------------------
+			
+			VAR MaiorReceita =
+			
+			    MAXX(
+			
+			        ALL(vw_dim_atividades[tipo_atividade]),
+			
+			        CALCULATE([Receita Total])
+			    )
+			
+			//-----------------------------------------
+			// MAIOR PREJUÍZO
+			//-----------------------------------------
+			
+			VAR MaiorPrejuizo =
+			
+			    MINX(
+			
+			        ALL(vw_dim_atividades[tipo_atividade]),
+			
+			        CALCULATE(
+			            [Receita Total] - [Receita Ano Anterior]
+			        )
+			    )
+			
+			RETURN
+			
+			IF(
+			
+			    //-----------------------------------------
+			    -- RECEITA POSITIVA
+			    //-----------------------------------------
+			
+			    VarReceita > 0,
+			
+			    IF(
+			
+			        ReceitaAtual = MaiorReceita,
+			
+			        "#9DD6D2",     // verde destaque
+			
+			        "#D1D5DB"      // cinza
+			    ),
+			
+			    //-----------------------------------------
+			    -- RECEITA NEGATIVA
+			    //-----------------------------------------
+			
+			    IF(
+			
+			        ImpactoAtual = MaiorPrejuizo,
+			
+			        "#DC2626",     // vermelho destaque
+			
+			        "#D1D5DB"      // cinza
+			    )
+			)
+		displayFolder: _UX
+		lineageTag: 9d913ef3-4f3f-4f2a-8f2e-c62c7ee9bab9
+
+	measure 'Cor Rótulos fat vs yoy' =
+			
+			IF(
+			    [Crescimento %] > 0,
+			    "#098D84",
+			    "#D65C5C"
+			)
+		displayFolder: _CARTÃO
+		lineageTag: 9d44b999-5798-4d78-937a-caac5ca93b0c
+
+	measure 'Dummy clientes' = 0
+		displayFolder: _CARTÃO
+		lineageTag: 507c020b-b36e-41a9-9eb1-2c41b6e63474
+
+		formatStringDefinition = ```
+				Var vClienteYoY= FORMAT([% clientes vs ano anterior],
+				"⇧ 0% ;⇩ 0% ")
+				RETURN
+				"""" &
+				vClienteYoY &
+				""""
+				
+				```
+
+	measure 'Cor Rótulos clientes vs yoy' = ```
+			
+			IF(
+			    [% clientes vs ano anterior] > 0,
+			    "#098D84",
+			    "#D65C5C"
+			    
+			)
+			```
+		displayFolder: _CARTÃO
+		lineageTag: 07c77b59-c50d-4ff4-a50e-27e4ea93645e
+
+	measure 'Cor Rótulos ticket vs yoy' =
+			
+			IF(
+			    [% ticket medio vs ano anterior] > 0,
+			    "#098D84",
+			    "#D65C5C"
+			)
+		displayFolder: _CARTÃO
+		lineageTag: 8a16a9da-e2e9-41e0-82ba-6697961043d9
+
+	measure 'Dummy ticket' = 0
+		displayFolder: _CARTÃO
+		lineageTag: d60c20b8-2d69-4195-a78a-de05e2f30deb
+
+		formatStringDefinition =
+				Var vticket= FORMAT([% ticket medio vs ano anterior],
+				"⇧ 0% ;⇩ 0% ")
+				RETURN
+				"""" &
+				vticket &
+				""""
+
+	measure 'Insight Atividades' = ```
+			
+			
+			VAR AnoAtual =
+			    SELECTEDVALUE(vw_dim_data[ano])
+			
+			VAR AnoAnterior =
+			    AnoAtual - 1
+			
+			//-------------------------------------------------
+			// VARIAÇÃO GERAL DA RECEITA
+			//-------------------------------------------------
+			
+			VAR VarReceita =
+			    [Crescimento %]
+			
+			//-------------------------------------------------
+			// TABELA DAS ATIVIDADES
+			//-------------------------------------------------
+			
+			VAR TabelaAtividade =
+			    ADDCOLUMNS(
+			
+			        VALUES(vw_dim_atividades[tipo_atividade]),
+			
+			        //-----------------------------------
+			        -- VARIAÇÃO %
+			        //-----------------------------------
+			
+			        "@VarPerc",
+			        [Crescimento %],
+			
+			        //-----------------------------------
+			        -- RECEITA ATUAL
+			        //-----------------------------------
+			
+			        "@ReceitaAtual",
+			        [Receita Total],
+			
+			        //-----------------------------------
+			        -- IMPACTO FINANCEIRO
+			        //-----------------------------------
+			
+			        "@Impacto",
+			        [Receita Total] - [Receita Ano Anterior]
+			    )
+			
+			//-------------------------------------------------
+			// MAIOR FATURAMENTO OU MAIOR PREJUÍZO
+			//-------------------------------------------------
+			
+			VAR MelhorResultado =
+			
+			    IF(
+			
+			        //-----------------------------------
+			        -- CRESCIMENTO
+			        //-----------------------------------
+			
+			        VarReceita > 0,
+			
+			        MAXX(
+			            TabelaAtividade,
+			            [@ReceitaAtual]
+			        ),
+			
+			        //-----------------------------------
+			        -- QUEDA
+			        //-----------------------------------
+			
+			        MINX(
+			            TabelaAtividade,
+			            [@Impacto]
+			        )
+			    )
+			
+			//-------------------------------------------------
+			// ATIVIDADE DE DESTAQUE
+			//-------------------------------------------------
+			
+			VAR AtividadeDestaque =
+			
+			    MAXX(
+			
+			        FILTER(
+			
+			            TabelaAtividade,
+			
+			            IF(
+			
+			                VarReceita > 0,
+			
+			                [@ReceitaAtual] = MelhorResultado,
+			
+			                [@Impacto] = MelhorResultado
+			            )
+			        ),
+			
+			        vw_dim_atividades[tipo_atividade]
+			    )
+			
+			//-------------------------------------------------
+			// PERCENTUAL DA ATIVIDADE
+			//-------------------------------------------------
+			
+			VAR PercentualAtividade =
+			
+			    MAXX(
+			
+			        FILTER(
+			
+			            TabelaAtividade,
+			
+			            IF(
+			
+			                VarReceita > 0,
+			
+			                [@ReceitaAtual] = MelhorResultado,
+			
+			                [@Impacto] = MelhorResultado
+			            )
+			        ),
+			
+			        [@VarPerc]
+			    )
+			
+			//-------------------------------------------------
+			// FATURAMENTO
+			//-------------------------------------------------
+			
+			VAR FaturamentoAtividade =
+			
+			    MAXX(
+			
+			        FILTER(
+			
+			            TabelaAtividade,
+			
+			            [@ReceitaAtual] =
+			                MAXX(
+			                    TabelaAtividade,
+			                    [@ReceitaAtual]
+			                )
+			        ),
+			
+			        [@ReceitaAtual]
+			    )
+			
+			//-------------------------------------------------
+			// PREJUÍZO
+			//-------------------------------------------------
+			
+			VAR PrejuizoAtividade =
+			
+			    MINX(
+			        TabelaAtividade,
+			        [@Impacto]
+			    )
+			
+			//-------------------------------------------------
+			// IMPACTO POSITIVO TOTAL
+			//-------------------------------------------------
+			
+			VAR CrescimentoTotalReceita =
+			
+			    CALCULATE(
+			
+			        [Receita Total] - [Receita Ano Anterior],
+			
+			        ALL(vw_dim_atividades)
+			    )
+			
+			//-------------------------------------------------
+			// PARTICIPAÇÃO NO CRESCIMENTO
+			//-------------------------------------------------
+			
+			VAR ImpactoPercentualPositivo =
+			
+			    DIVIDE(
+			
+			        FaturamentoAtividade,
+			
+			        CALCULATE(
+			            [Receita Total],
+			            ALL(vw_dim_atividades)
+			        )
+			    )
+			
+			//-------------------------------------------------
+			// PARTICIPAÇÃO NA QUEDA
+			//-------------------------------------------------
+			
+			VAR ImpactoPercentualNegativo =
+			
+			    DIVIDE(
+			
+			        ABS(PrejuizoAtividade),
+			
+			        ABS(CrescimentoTotalReceita)
+			    )
+			
+			RETURN
+			
+			IF(
+			
+			    //-------------------------------------------------
+			    -- CRESCIMENTO
+			    //-------------------------------------------------
+			
+			    VarReceita > 0,
+			
+			    "📈 Em " &
+			    AnoAtual &
+			    ", " &
+			    AtividadeDestaque &
+			    " foi a atividade com maior impacto positivo na receita, apresentando crescimento de " &
+			    FORMAT(
+			        ABS(PercentualAtividade),
+			        "0,0%"
+			    ) &
+			    " em relação a " &
+			    AnoAnterior &
+			    "." &
+			
+			    UNICHAR(10) &
+			   
+			    "• A atividade faturou " &
+			    FORMAT(
+			        FaturamentoAtividade,
+			        "R$ #,##0"
+			    ) &
+			
+			    " e representou " &
+			    FORMAT(
+			        ImpactoPercentualPositivo,
+			        "0%"
+			    ) &
+			    " da receita total do período.",
+			
+			
+			    //-------------------------------------------------
+			    -- QUEDA
+			    //-------------------------------------------------
+			
+			    "📉 Em " &
+			    AnoAtual &
+			    ", " &
+			    AtividadeDestaque &
+			    " apresentou o maior impacto negativo na receita, com redução de " &
+			    FORMAT(
+			        ABS(PercentualAtividade),
+			        "0,0%"
+			    ) &
+			    " em relação a " &
+			    AnoAnterior &
+			    "." &
+			
+			    UNICHAR(10) &
+			  
+			
+			    "• A atividade gerou prejuízo de " &
+			    FORMAT(
+			        ABS(PrejuizoAtividade),
+			        "R$ #,##0"
+			    ) &
+			
+			    ", representando " &
+			    FORMAT(
+			        ImpactoPercentualNegativo,
+			        "0%"
+			    ) &
+			    " da queda total da receita."
+			)
+			```
+		displayFolder: _INSIGHTS
+		lineageTag: eecbbad0-4922-4458-8368-39c63801c969
+
+	measure 'Recomendação Estratégica' =
+			
+			
+			VAR VarClientes =
+			    [% clientes vs ano anterior]
+			
+			VAR VarTicket =
+			    [% ticket medio vs ano anterior]
+			
+			VAR VarReceita =
+			    [Crescimento %]
+			
+			VAR AtividadeCritica =
+			    [Atividade Maior Queda]
+			
+			VAR AtividadePositiva =
+			    [Atividade Maior Crescimento]
+			
+			RETURN
+			
+			SWITCH(
+			
+			    TRUE(),
+			
+			    //-------------------------------------------------
+			    -- CLIENTES SOBEM / TICKET CAI
+			    //-------------------------------------------------
+			
+			    VarClientes > 0
+			    && VarTicket < 0,
+			
+			    "💡 Avaliar estratégias de aumento do ticket médio, priorizando planos premium e serviços de maior valor agregado." &
+			
+			    UNICHAR(10) &
+			    UNICHAR(10) &
+			
+			    "• Recomenda-se atenção especial à atividade " &
+			    AtividadeCritica &
+			    ", principal responsável pela retração da receita no período.",
+			
+			
+			    //-------------------------------------------------
+			    -- CLIENTES SOBEM / TICKET SOBE
+			    //-------------------------------------------------
+			
+			    VarClientes > 0
+			    && VarTicket > 0,
+			
+			    "💡 Manter a estratégia comercial atual, aproveitando o crescimento saudável da operação." &
+			
+			    UNICHAR(10) &
+			    UNICHAR(10) &
+			
+			    "• Avaliar expansão da atividade " &
+			    AtividadePositiva &
+			    ", que apresentou maior contribuição positiva para a receita.",
+			
+			
+			    //-------------------------------------------------
+			    -- CLIENTES CAEM / TICKET SOBE
+			    //-------------------------------------------------
+			
+			    VarClientes < 0
+			    && VarTicket > 0,
+			
+			    "💡 Ampliar ações de aquisição de clientes, mantendo foco em produtos e serviços de maior valor agregado." &
+			
+			    UNICHAR(10) &
+			    UNICHAR(10) &
+			
+			    "• Revisar estratégias de retenção nas atividades com maior retração.",
+			
+			
+			    //-------------------------------------------------
+			    -- CLIENTES CAEM / TICKET CAI
+			    //-------------------------------------------------
+			
+			    VarClientes < 0
+			    && VarTicket < 0,
+			
+			    "💡 Revisar estratégias de retenção, precificação e mix de produtos para recuperação da receita." &
+			
+			    UNICHAR(10) &
+			    UNICHAR(10) &
+			
+			    "• Priorizar ações corretivas na atividade " &
+			    AtividadeCritica &
+			    ", principal impacto negativo do período.",
+			
+			
+			    //-------------------------------------------------
+			    -- PADRÃO
+			    //-------------------------------------------------
+			
+			    "💡 Manter acompanhamento contínuo dos indicadores e oportunidades de crescimento."
+			)
+		displayFolder: _INSIGHTS
+		lineageTag: 679fb28c-1db3-4269-a3bf-9d0c544ba4aa
+
+	measure 'Atividade Maior Crescimento' =
+			
+			
+			VAR TabelaAtividade =
+			
+			    ADDCOLUMNS(
+			
+			        VALUES(vw_dim_atividades[tipo_atividade]),
+			
+			        "@Receita",
+			        [Receita Total]
+			    )
+			
+			VAR MaiorReceita =
+			
+			    MAXX(
+			        TabelaAtividade,
+			        [@Receita]
+			    )
+			
+			RETURN
+			
+			MAXX(
+			
+			    FILTER(
+			
+			        TabelaAtividade,
+			
+			        [@Receita] = MaiorReceita
+			    ),
+			
+			    vw_dim_atividades[tipo_atividade]
+			)
+		displayFolder: _UX
+		lineageTag: 1ff78163-f816-4349-b98e-bc85d7fa5cb7
+
+	measure 'Cor Plano' =
+			
+			
+			VAR VarReceita =
+			    [Crescimento %]
+			
+			//-----------------------------------------
+			// RECEITA DA ATIVIDADE ATUAL
+			//-----------------------------------------
+			
+			VAR ReceitaAtual =
+			    [Receita Total]
+			
+			VAR ImpactoAtual =
+			    [Receita Total] - [Receita Ano Anterior]
+			
+			//-----------------------------------------
+			// MAIOR FATURAMENTO
+			//-----------------------------------------
+			
+			VAR MaiorReceita =
+			
+			    MAXX(
+			
+			        ALL(vw_dim_plano[nome_plano]),
+			
+			        CALCULATE([Receita Total])
+			    )
+			
+			//-----------------------------------------
+			// MAIOR PREJUÍZO
+			//-----------------------------------------
+			
+			VAR MaiorPrejuizo =
+			
+			    MINX(
+			
+			        ALL(vw_dim_plano[nome_plano]),
+			
+			        CALCULATE(
+			            [Receita Total] - [Receita Ano Anterior]
+			        )
+			    )
+			
+			RETURN
+			
+			IF(
+			
+			    //-----------------------------------------
+			    -- RECEITA POSITIVA
+			    //-----------------------------------------
+			
+			    VarReceita > 0,
+			
+			    IF(
+			
+			        ReceitaAtual = MaiorReceita,
+			
+			        "#9DD6D2",     // verde destaque
+			
+			        "#D1D5DB"      // cinza
+			    ),
+			
+			    //-----------------------------------------
+			    -- RECEITA NEGATIVA
+			    //-----------------------------------------
+			
+			    IF(
+			
+			        ImpactoAtual = MaiorPrejuizo,
+			
+			        "#DC2626",     // vermelho destaque
+			
+			        "#D1D5DB"      // cinza
+			    )
+			)
+		displayFolder: _UX
+		lineageTag: 9be0c122-23d4-4765-a059-e4a0d60feee1
+
+	measure 'Impacto Receita' = [Receita Total]-[Receita ano anterior]
+		displayFolder: _GERAL
+		lineageTag: f5365c74-b04f-4b28-b95c-6e92e8adb3b4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Cor Rótulos difer_rec vs yoy' =
+			
+			IF(
+			    [Impacto Receita] > 0,
+			    "#098D84",
+			    "#D65C5C"
+			)
+		displayFolder: _CARTÃO
+		lineageTag: 94a0005e-c685-41ce-b9c5-0e3d12f98159
+
+	measure 'Valor Grafico Dinamico' = ```
+			
+			// 1. Captura o número de ordem (ID) do parâmetro que está ativo no gráfico
+			VAR SelecaoOrdem = SELECTEDVALUE('Parâm_data'[Parâm_data Pedido]) 
+			
+			RETURN
+			IF (
+			    SelecaoOrdem = 0, // 2. Se for 0 (geralmente o Ano), limpa o filtro de ano da tela
+			    CALCULATE (
+			        [Receita Total],
+			        REMOVEFILTERS(vw_dim_data[ano]) 
+			    ),
+			    [Receita Total] // 3. Se for 1 (Mês), respeita todos os filtros da tela
+			)
+			
+			
+			```
+		lineageTag: d2c5b9f3-e731-4c6a-b7e0-fd9eb96db1ad
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Teste Numero' = ```
+			SELECTEDVALUE('Parâm_data'[Parâm_data Pedido])
+			
+			```
+		formatString: 0
+		lineageTag: 6fcaafe7-cec8-4076-8405-549a665e3200
+
+	measure 'Cohort Ticket Médio' = ```
+			
+			VAR Receita = SUM(vw_fato_receita[receita])
+			VAR Clientes = DISTINCTCOUNT(vw_fato_receita[id_cliente])
+			RETURN 
+			DIVIDE(Receita, Clientes)
+			```
+		lineageTag: c72a8a8d-1ecb-4915-8b7a-a983a4f97fce
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition _medidas = m
+		mode: import
+		source =
+				let
+				    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Coluna 1" = _t]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"Coluna 1", type text}}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"Coluna 1"})
+				in
+				    #"Colunas Removidas"
+
+	annotation PBI_ResultType = Table
+

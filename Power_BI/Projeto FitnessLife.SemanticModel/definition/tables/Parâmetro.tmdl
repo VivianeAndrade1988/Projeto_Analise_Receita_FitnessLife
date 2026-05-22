@@ -1,0 +1,48 @@
+table Parâmetro
+	lineageTag: 87788e4a-d311-433c-a92e-89a2b5914988
+
+	column Parâmetro
+		lineageTag: f6b223b9-e658-43cc-bfe5-28a3875b5886
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Parâmetro Pedido'
+
+		relatedColumnDetails
+			groupByColumn: 'Parâmetro Campos'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parâmetro Campos'
+		isHidden
+		lineageTag: d620b37b-c5b4-4085-a62a-3fe1e8fd51a7
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Parâmetro Pedido'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parâmetro Pedido'
+		isHidden
+		formatString: 0
+		lineageTag: bae6366c-960b-499c-8529-ccf92eecb1ed
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Parâmetro = calculated
+		mode: import
+		source =
+				{
+				    ("Atividade", NAMEOF('vw_dim_atividades'[tipo_atividade]), 0),
+				    ("Plano", NAMEOF('vw_dim_plano'[nome_plano]), 1)
+				}
+
+	annotation PBI_Id = 1e6902dac86b48b59579a362258eafa4
+

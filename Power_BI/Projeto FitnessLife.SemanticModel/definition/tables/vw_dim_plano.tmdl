@@ -1,0 +1,33 @@
+table vw_dim_plano
+	lineageTag: 97c6edd6-5cbc-4cc9-9106-98ed1d1b9f05
+
+	column id_plano
+		dataType: int64
+		formatString: 0
+		lineageTag: a78fd883-23c6-4d06-a540-de0807f122c3
+		summarizeBy: none
+		sourceColumn: id_plano
+
+		annotation SummarizationSetBy = Automatic
+
+	column nome_plano
+		dataType: string
+		lineageTag: dd9e29d2-08a8-4081-9be7-d2159301370d
+		summarizeBy: none
+		sourceColumn: nome_plano
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vw_dim_plano = m
+		mode: import
+		source =
+				let
+				    Fonte = Sql.Database("LAPTOP-PCN678L7", "fitnesslife_dw"),
+				    dbo_vw_dim_plano = Fonte{[Schema="dbo",Item="vw_dim_plano"]}[Data]
+				in
+				    dbo_vw_dim_plano
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,93 @@
+table vw_dim_clientes
+	lineageTag: cccd1d63-9c44-49d9-80c0-c9938c62b00a
+
+	column id_cliente
+		dataType: int64
+		formatString: 0
+		lineageTag: ccbd3a5c-b87b-4ab5-93c6-0b8b32c34c00
+		summarizeBy: none
+		sourceColumn: id_cliente
+
+		annotation SummarizationSetBy = Automatic
+
+	column nome_cliente
+		dataType: string
+		lineageTag: 0e9f3811-cd9c-4ff8-a81a-15ede7afeb9f
+		summarizeBy: none
+		sourceColumn: nome_cliente
+
+		annotation SummarizationSetBy = Automatic
+
+	column cidade
+		dataType: string
+		lineageTag: 108aad2b-99d4-4b31-89a9-b9a4bb4d6a90
+		summarizeBy: none
+		sourceColumn: cidade
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_cadastro
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: be18904b-3436-450f-bd2b-00d88b1ee3a5
+		summarizeBy: none
+		sourceColumn: data_cadastro
+
+		variation Variation
+			isDefault
+			relationship: 3ccbd7fa-2508-4f65-989f-4c4f0c0663e7
+			defaultHierarchy: LocalDateTable_f6932e7e-e5b8-49d0-8976-8f778a4301ba.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column faixa_etaria
+		dataType: string
+		lineageTag: e60d18bd-9559-420a-abf6-b3fe096dea8c
+		summarizeBy: none
+		sourceColumn: faixa_etaria
+
+		annotation SummarizationSetBy = Automatic
+
+	column meses_fidelidade
+		dataType: int64
+		formatString: 0
+		lineageTag: d022a24c-1626-413f-b106-94d5b60bf2c6
+		summarizeBy: sum
+		sourceColumn: meses_fidelidade
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_cancelamento
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 4edb6d6e-c65a-4a16-b487-e436d8ee5e87
+		summarizeBy: none
+		sourceColumn: data_cancelamento
+
+		variation Variation
+			isDefault
+			relationship: 8ee1590c-b2f3-42df-97e6-2044d96f46ad
+			defaultHierarchy: LocalDateTable_5d4f4a4c-b4d9-4a03-a54e-34b303423c2d.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition vw_dim_clientes = m
+		mode: import
+		source =
+				let
+				    Fonte = Sql.Database("LAPTOP-PCN678L7", "fitnesslife_dw"),
+				    dbo_vw_dim_clientes = Fonte{[Schema="dbo",Item="vw_dim_clientes"]}[Data],
+				    #"Tipo Alterado" = Table.TransformColumnTypes(dbo_vw_dim_clientes,{{"data_cadastro", type date}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

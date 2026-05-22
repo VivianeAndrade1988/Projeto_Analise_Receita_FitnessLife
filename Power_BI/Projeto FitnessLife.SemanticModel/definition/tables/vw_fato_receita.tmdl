@@ -1,0 +1,104 @@
+table vw_fato_receita
+	lineageTag: 19f6bc75-1b51-4bba-8f38-348559165227
+
+	column id_cliente
+		dataType: int64
+		formatString: 0
+		lineageTag: f13d7efa-1d83-4a8d-ad8a-54b371322a55
+		summarizeBy: none
+		sourceColumn: id_cliente
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_plano
+		dataType: int64
+		formatString: 0
+		lineageTag: 160784f1-678f-41bd-a96d-d49262dfee33
+		summarizeBy: none
+		sourceColumn: id_plano
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_atividade
+		dataType: int64
+		formatString: 0
+		lineageTag: d86edf06-0b06-4450-b9eb-0a802755e94e
+		summarizeBy: none
+		sourceColumn: id_atividade
+
+		annotation SummarizationSetBy = Automatic
+
+	column data
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: ae0486a0-ffe4-4ab2-a992-9f0897b48cd9
+		summarizeBy: none
+		sourceColumn: data
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column receita
+		dataType: double
+		lineageTag: e315cf67-3a60-4bc1-82f8-c6746fd82370
+		summarizeBy: sum
+		sourceColumn: receita
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Safra Cliente' =
+			
+			CALCULATE(
+			    MIN(vw_fato_receita[data]),
+			    ALLEXCEPT(vw_fato_receita,vw_fato_receita[id_cliente])
+			)
+		formatString: mmmm" de "yyyy
+		lineageTag: ca4b5632-b34e-49a1-8479-904467bf0a26
+		summarizeBy: none
+
+		variation Variation
+			isDefault
+			relationship: 4a0484ae-f0fb-4723-9e00-148c4f3f4042
+			defaultHierarchy: LocalDateTable_11a8fb9e-8d00-493e-bf19-61a6b8ed41b7.'Hierarquia de datas'
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column Meses_de_Vida = ```
+			
+			DATEDIFF(
+			    vw_fato_receita[Safra Cliente], 
+			    vw_fato_receita[data], 
+			    MONTH
+			)
+			```
+		formatString: 0
+		lineageTag: b00b4c04-dd6c-4f84-91bf-7bf969f29119
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vw_fato_receita = m
+		mode: import
+		source =
+				let
+				    Fonte = Sql.Database("LAPTOP-PCN678L7", "fitnesslife_dw"),
+				    dbo_vw_fato_receita = Fonte{[Schema="dbo",Item="vw_fato_receita"]}[Data],
+				    #"Tipo Alterado" = Table.TransformColumnTypes(dbo_vw_fato_receita,{{"data", type date}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

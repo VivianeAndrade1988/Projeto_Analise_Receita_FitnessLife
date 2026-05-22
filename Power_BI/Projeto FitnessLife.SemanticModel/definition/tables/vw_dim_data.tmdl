@@ -1,0 +1,61 @@
+table vw_dim_data
+	lineageTag: 81d85e86-d31b-4ecc-9e58-7e9174886803
+
+	column data
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 816b40dc-2279-4348-9571-2b5a1a376566
+		summarizeBy: none
+		sourceColumn: data
+
+		variation Variation
+			isDefault
+			relationship: 22419450-cfc6-4093-8357-c6bc0865d1d3
+			defaultHierarchy: LocalDateTable_08df9b87-96ee-4202-bf8a-0fdcc5093467.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ano
+		dataType: int64
+		formatString: 0
+		lineageTag: c1df2cfe-d790-4fc7-958b-3f2f464c45c9
+		summarizeBy: sum
+		sourceColumn: ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column mes
+		dataType: int64
+		formatString: 0
+		lineageTag: 38dadd88-0d8a-491d-81bd-3278e5a4c45b
+		summarizeBy: sum
+		sourceColumn: mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column nome_mes
+		dataType: string
+		lineageTag: 702c5de4-d838-41b6-a2e6-3162926f4555
+		summarizeBy: none
+		sourceColumn: nome_mes
+		sortByColumn: mes
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vw_dim_data = m
+		mode: import
+		source =
+				let
+				    Fonte = Sql.Database("LAPTOP-PCN678L7", "fitnesslife_dw"),
+				    dbo_vw_dim_data = Fonte{[Schema="dbo",Item="vw_dim_data"]}[Data]
+				in
+				    dbo_vw_dim_data
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
