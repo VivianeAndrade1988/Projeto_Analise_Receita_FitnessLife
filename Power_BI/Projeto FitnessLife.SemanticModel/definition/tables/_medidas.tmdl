@@ -944,45 +944,6 @@ table _medidas
 		displayFolder: _CARTÃO
 		lineageTag: 94a0005e-c685-41ce-b9c5-0e3d12f98159
 
-	measure 'Valor Grafico Dinamico' = ```
-			
-			// 1. Captura o número de ordem (ID) do parâmetro que está ativo no gráfico
-			VAR SelecaoOrdem = SELECTEDVALUE('Parâm_data'[Parâm_data Pedido]) 
-			
-			RETURN
-			IF (
-			    SelecaoOrdem = 0, // 2. Se for 0 (geralmente o Ano), limpa o filtro de ano da tela
-			    CALCULATE (
-			        [Receita Total],
-			        REMOVEFILTERS(vw_dim_data[ano]) 
-			    ),
-			    [Receita Total] // 3. Se for 1 (Mês), respeita todos os filtros da tela
-			)
-			
-			
-			```
-		lineageTag: d2c5b9f3-e731-4c6a-b7e0-fd9eb96db1ad
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure 'Teste Numero' = ```
-			SELECTEDVALUE('Parâm_data'[Parâm_data Pedido])
-			
-			```
-		formatString: 0
-		lineageTag: 6fcaafe7-cec8-4076-8405-549a665e3200
-
-	measure 'Cohort Ticket Médio' = ```
-			
-			VAR Receita = SUM(vw_fato_receita[receita])
-			VAR Clientes = DISTINCTCOUNT(vw_fato_receita[id_cliente])
-			RETURN 
-			DIVIDE(Receita, Clientes)
-			```
-		lineageTag: c72a8a8d-1ecb-4915-8b7a-a983a4f97fce
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
 	partition _medidas = m
 		mode: import
 		source =
