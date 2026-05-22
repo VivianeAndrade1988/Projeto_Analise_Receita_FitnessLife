@@ -1,0 +1,58 @@
+/*
+=============================================================================
+PROJETO: FitLife Data Warehouse
+ETAPA: Carga da Camada Gold (ETL)
+DESCRIÇÃO: 
+    Este script cria a procedure para carregar a fato receita.
+    A lógica consiste em:
+    1. Validar a existência da procedure (CREATE OR ALTER).
+    2. Sincronizar os dados da camada Silver para a camada Gold usando MERGE.
+    3. Atualizar registros existentes e inserir novos registros (Upsert).
+=============================================================================
+*/
+
+-- PROCEDURE PARA CARREGAR DIMENSÃO RECEITA
+
+CREATE OR ALTER PROCEDURE USP_CARGA_GOLD_FATO_RECEITA
+AS
+BEGIN
+
+-- Habilita a inserção forçada de valores na coluna identity
+    SET IDENTITY_INSERT FATO_RECEITA ON;
+
+    -- Sincroniza dados da Silver para a Gold
+    MERGE FATO_RECEITA AS D
+    USING DBO.SILVER_RECEITA AS O
+    ON (D.id = O.id)
+    
+    -- Se o RECEITA já existe na Gold, atualiza os dados dele
+  WHEN MATCHED THEN UPDATE
+    set
+       id_cliente   = O.id_cliente,
+       id_plano     = O.id_plano,
+       id_atividade = O.id_atividade,
+       data         = O.data,
+       receita      = O.receita
+      
+                    
+    -- Se o RECEITA não existe, insere um novo
+    WHEN NOT MATCHED THEN
+        INSERT 
+          (id,
+           id_cliente,  
+           id_plano,    
+           id_atividade,
+           data,        
+           receita     
+           )
+
+        VALUES (
+            O.id,
+            O.id_cliente,
+            O.id_plano,
+            O.id_atividade,
+            O.data,
+            O.receita );
+
+    PRINT 'DIM_RECEITA carregada com sucesso.';
+    end
