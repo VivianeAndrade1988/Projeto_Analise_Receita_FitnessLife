@@ -1,0 +1,62 @@
+/*
+PROJETO: FitLife Data Warehouse
+ETAPA: Carga da Camada Gold (ETL)
+DESCRIÇÃO: 
+    Este script cria a procedure para carregar a dimensão Cliente.
+    A lógica consiste em:
+    1. Validar a existência da procedure (CREATE OR ALTER).
+    2. Sincronizar os dados da camada Silver para a camada Gold usando MERGE.
+    3. Atualizar registros existentes e inserir novos registros (Upsert).
+=============================================================================
+*/
+
+- PROCEDURE PARA CARREGAR DIMENSÃO CLIENTE
+
+CREATE OR ALTER PROCEDURE USP_CARGA_GOLD_DIM_CLIENTE
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    -- 1. Habilita a inserção manual de IDs (necessário caso a tabela tenha sido criada com IDENTITY)
+    -- Se a sua tabela não tiver a propriedade IDENTITY, você pode remover ou comentar as duas linhas abaixo.
+    SET IDENTITY_INSERT DIM_CLIENTE ON;
+
+
+    -- Sincroniza dados da Silver para a Gold
+    MERGE DIM_CLIENTE AS D
+    USING DBO.SILVER_CLIENTE AS O
+    ON (D.id_cliente = O.id_cliente)
+    
+    -- Se o cliente já existe na Gold, atualiza os dados dele
+  WHEN MATCHED THEN UPDATE
+    set
+       nome_cliente = O.nome_cliente,
+       cidade = O.cidade,
+       data_cadastro= O.data_cadastro,
+       faixa_etaria = O.faixa_etaria,
+       status = O.status,
+       meses_fidelidade= o.meses_fidelidade
+            
+            
+    -- Se o cliente não existe, insere um novo
+    WHEN NOT MATCHED THEN
+        INSERT 
+           (id_cliente, 
+            nome_cliente, 
+            cidade, 
+            data_cadastro,
+            faixa_etaria, 
+            status,
+            meses_fidelidade)
+
+        VALUES (
+            O.id_cliente, 
+            O.nome_cliente, 
+            O.cidade, 
+            O.data_cadastro,
+            O.faixa_etaria, 
+            O.status,
+            O.meses_fidelidade);
+
+    PRINT 'DIM_CLIENTE carregada com sucesso.';
+    end
