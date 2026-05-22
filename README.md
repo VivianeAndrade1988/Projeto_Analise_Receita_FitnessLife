@@ -133,15 +133,15 @@ FitnessLife
 
 # 📘 Documentações Técnicas
 
-- [SQL & Data Engineering](https://github.com/VivianeAndrade1988/Analise_Receita_FitnessLife/blob/main/Scripts/readme.md)
-- [Power BI & Analytics](https://github.com/VivianeAndrade1988/Analise_Receita_FitnessLife/blob/main/PowerBI/readme.md)
+- [SQL & Data Engineering](https://github.com/VivianeAndrade1988/Projeto_Analise_Receita_FitnessLife/blob/main/Scripts/Readme.md)
+- [Power BI & Analytics](https://github.com/VivianeAndrade1988/Projeto_Analise_Receita_FitnessLife/blob/main/Power_BI/Readme.md)
 
 # 📘 Apresentação executiva
 
 Neste link tem toda a análise, desde o entendimento do problema, causa raiz, recomendações e próximos passos.
 
 
-- [Business Analytics](https://github.com/VivianeAndrade1988/Analise_Receita_FitnessLife/blob/main/Business%20Analytics/Readme.md).
+- [Business Analytics](https://github.com/VivianeAndrade1988/Projeto_Analise_Receita_FitnessLife/blob/main/Business_Analytics/Readme.md).
 
   
 
