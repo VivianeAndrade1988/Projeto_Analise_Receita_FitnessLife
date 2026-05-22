@@ -1,0 +1,50 @@
+
+/*
+=============================================================================
+PROJETO: FitLife Data Warehouse
+ETAPA: Carga da Camada Gold (ETL)
+DESCRIÇÃO: 
+    Este script cria a procedure para carregar a dimensão plano.
+    A lógica consiste em:
+    1. Validar a existência da procedure (CREATE OR ALTER).
+    2. Sincronizar os dados da camada Silver para a camada Gold usando MERGE.
+    3. Atualizar registros existentes e inserir novos registros (Upsert).
+=============================================================================
+*/
+
+CREATE OR ALTER PROCEDURE USP_CARGA_GOLD_DIM_PLANOS
+AS
+BEGIN
+
+
+    -- Sincroniza dados da Silver para a Gold
+    MERGE DIM_plano AS D
+    USING (
+        SELECT DISTINCT 
+            id_plano,
+            nome_plano
+        from DBO.SILVER_plano_precos) AS O
+    ON (D.id_plano = O.id_plano)
+    
+    -- Se o plano_precos já existe na Gold, atualiza os dados dele
+  WHEN MATCHED THEN UPDATE
+    set
+       nome_plano = O.nome_plano
+      
+      
+                    
+    -- Se o plano_precos não existe, insere um novo
+    WHEN not MATCHED THEN
+        INSERT 
+           (id_plano, 
+            nome_plano
+          
+            )
+
+        VALUES (
+            O.id_plano, 
+            O.nome_plano
+          );
+
+    PRINT 'DIM_plano_precos carregada com sucesso.';
+    end
