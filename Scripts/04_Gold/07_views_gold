@@ -1,0 +1,158 @@
+
+/*
+=============================================================================
+PROJETO: FitLife Data Warehouse
+ETAPA: Camada Gold - Camada Semântica (Views)
+DESCRIÇÃO: 
+    Este script cria as estruturas de visualização na camada Gold.
+    A lógica consiste em:
+    1. Validar a existência de views anteriores (CREATE OR ALTER).
+    2. Responder a dores de negócio mapeadas na Árvore de Problemas.
+    3. Facilitar o consumo direto dos dados por ferramentas de BI.
+=============================================================================
+*/
+
+/*=====================================================
+1. RECEITA TOTAL POR ANO
+Responde: quando caiu?
+=====================================================*/
+
+CREATE VIEW vw_receita_anual 
+AS
+
+SELECT
+    b.ano,
+    SUM(receita) AS receita_total
+FROM fato_receita   a
+join dim_data       b on a.data= b.data
+GROUP BY b.ano;
+GO
+
+
+/*=====================================================
+2. CLIENTES ATIVOS POR ANO
+Responde: perdeu clientes?
+=====================================================*/
+
+CREATE VIEW vw_clientes_ativos AS
+SELECT 
+    d.ano,
+    COUNT(*) AS clientes_ativos
+FROM SILVER_cliente c
+CROSS JOIN (
+    SELECT DISTINCT ano
+    FROM dim_data
+) d
+WHERE c.data_cadastro <= DATEFROMPARTS(d.ano,12,31)
+
+AND (
+        c.data_cancelamento IS NULL
+        OR c.data_cancelamento > DATEFROMPARTS(d.ano,12,31)
+    )
+
+GROUP BY d.ano;
+GO
+
+/*=====================================================
+4. TICKET MÉDIO POR ANO
+Responde: cliente gastou menos?
+=====================================================*/
+CREATE VIEW vw_ticket_medio AS
+SELECT
+    b.ano,
+    SUM(receita) /
+    COUNT(DISTINCT id_cliente) AS ticket_medio
+FROM fato_receita   a
+join dim_data       b on a.data = b.data
+GROUP BY b.ano;
+GO
+
+/*=====================================================
+5. RECEITA POR PLANO
+Responde: migração de plano?
+=====================================================*/
+
+CREATE VIEW vw_receita_plano AS
+select 
+    b.nome_plano,
+    c.ano,
+    sum (a.receita)   as receita
+
+from fato_receita   a
+join dim_plano      b on a.id_plano     = b.id_plano
+join dim_data       c on a.data         = c.data
+group by b.nome_plano,  c.ano
+GO
+
+/*=====================================================
+6. RECEITA POR ATIVIDADE
+Responde: qual atividade caiu?
+ESSENCIAL PARA CAUSA RAIZ
+=====================================================*/
+
+CREATE VIEW vw_receita_atividade AS
+SELECT 
+b.ano,
+a.tipo_atividade,
+SUM(f.receita) as receita_total
+FROM fato_receita f
+JOIN dim_atividade  a ON f.id_atividade = a.id_atividade
+join dim_data       b on f.data         = b.data
+GROUP BY b.ano, a.tipo_atividade;
+GO
+
+/*=====================================================
+7. RECEITA POR REGIÃO
+Responde: cidades impactadas?
+=====================================================*/
+CREATE VIEW vw_receita_regiao AS
+SELECT
+    c.ano,
+    b.cidade,
+    SUM(receita) AS receita_total
+FROM fato_receita   a
+join dim_cliente    b on a.id_cliente = b.id_cliente
+join dim_data       c on a.data         = c.data
+
+GROUP BY
+   c.ano, b.cidade
+GO
+
+
+
+/*=====================================================
+8. VARIAÇÃO 2022 x 2023 POR ATIVIDADE
+Prova qual atividade mais caiu
+=====================================================*/
+CREATE VIEW vw_variacao_atividade AS
+SELECT
+    b.tipo_atividade,
+
+    SUM(CASE WHEN c.ano = 2022 THEN receita ELSE 0 END) AS receita_2022,
+                  
+    SUM(CASE WHEN c.ano = 2023 THEN receita ELSE 0 END) AS receita_2023,
+                  
+    SUM(CASE WHEN c.ano = 2023 THEN receita ELSE 0 END)
+    -             
+    SUM(CASE WHEN c.ano = 2022 THEN receita ELSE 0 END)
+    AS variacao_valor,
+
+    ROUND(
+        (
+        (
+        SUM(CASE WHEN c.ano = 2023 THEN receita ELSE 0 END)
+        -
+        SUM(CASE WHEN c.ano = 2022 THEN receita ELSE 0 END)
+        ) * 100.0
+        /
+        NULLIF(
+            SUM(CASE WHEN c.ano = 2022 THEN receita ELSE 0 END),0
+        )
+        ),2
+    ) AS variacao_percentual
+
+FROM fato_receita   a
+join dim_atividade  b on a.id_atividade = b.id_atividade
+join dim_data       c on a.data         = c.data
+GROUP BY b.tipo_atividade;
+GO
