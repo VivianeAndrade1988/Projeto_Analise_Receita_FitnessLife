@@ -1,0 +1,51 @@
+
+/*
+=============================================================================
+PROJETO: FitLife Data Warehouse
+ETAPA: Carga da Camada Gold (ETL)
+DESCRIÇÃO:  
+    Este script cria a procedure para carregar a dimensão Data.
+    A lógica consiste em:
+    1. Validar a existência da procedure (CREATE OR ALTER).
+    2. Sincronizar os dados da camada Silver para a camada Gold usando MERGE.
+    3. Atualizar registros existentes e inserir novos registros (Upsert).
+=============================================================================
+*/
+
+-- PROCEDURE PARA CARREGAR DIMENSÃO data
+
+CREATE OR ALTER PROCEDURE USP_CARGA_GOLD_DIM_DATA
+AS
+BEGIN
+
+
+    -- Sincroniza dados da Silver para a Gold
+    MERGE DIM_DATA AS D
+    USING DBO.SILVER_DATA AS O
+    ON (D.data = O.data)
+    
+    -- Se o data já existe na Gold, atualiza os dados dele
+  WHEN MATCHED THEN UPDATE
+    set
+       ano      = O.ano,
+       mes      = O.mes,
+       nome_mes = O.nome_mes
+      
+                    
+    -- Se o data não existe, insere um novo
+    WHEN NOT MATCHED THEN
+        INSERT 
+           (data, 
+            ano,     
+            mes,     
+            nome_mes
+            )
+
+        VALUES (
+            O.data, 
+            O.ano,
+            O.mes, 
+            O.nome_mes );
+
+    PRINT 'DIM_data carregada com sucesso.';
+    end
