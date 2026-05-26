@@ -44,7 +44,6 @@ O projeto foi estruturado utilizando arquitetura medalhão:
 ![Arquitetura do Projeto](./Imagens/Imagens_Readme_Principal/ArquiteturaProjeto.png)
 
 
-<img width="700" height="200" alt="arquitetura_medalhao" src="https://github.com/user-attachments/assets/eacbd73b-240a-4a56-be8b-faacb09f25d2" />
 
 ---
 
@@ -52,7 +51,7 @@ O projeto foi estruturado utilizando arquitetura medalhão:
 
 A investigação foi conduzida utilizando:
 
-<img width="800" height="250" alt="investigação" src="https://github.com/user-attachments/assets/7d5e6414-b20f-417a-ad81-45982b400dba" />
+![Investigação](./Imagens/Imagens_Readme_Principal/investigação.jpg)
 
 
 ---
@@ -83,7 +82,7 @@ A saída do professor responsável pela modalidade comprometeu:
 
 # 📈 Dashboard Power BI
 
-<img width="1000" height="500" alt="Captura de tela 2026-05-20 131025" src="https://github.com/user-attachments/assets/30482342-8a2a-438f-b2bd-d3123bafd932" />
+![Dashboard](./Imagens/Imagens_Readme_Principal/Dashboard.png)
 
 
 ---
