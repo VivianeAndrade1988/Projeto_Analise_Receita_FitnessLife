@@ -107,7 +107,8 @@ fato_receita
 
 # ⭐ Modelo Estrela
 
-![Modelo Estrela](../Imagens/Imagens_Readme_Scripts.Sql/satar_schema.png)
+
+![Modelagem Star Schema](../Imagens/Imagens_Readme_Scripts.Sql/star_schema.png)
 
 
 
