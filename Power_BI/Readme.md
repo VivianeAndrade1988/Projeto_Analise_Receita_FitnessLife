@@ -41,7 +41,7 @@ Transformar dados do Data Warehouse em análises executivas e insights estratég
 
 ---
 ## Receita ao longo do tempo
-![Receita ao longo do tempo](../Imagens/Imagens_Readme_BI/receita.jpg)
+![Receita ao longo do tempo](../Imagens/Imagens_Readme_BI/receita...jpg)
 
 
 
@@ -50,7 +50,8 @@ Transformar dados do Data Warehouse em análises executivas e insights estratég
 
 ## Clientes vs Ticket Médio
 
-![Ticket Medio](./Imagens/Imagens_Readme_BI/ticket_medio.jpg)
+![Clientes vs Ticket Médio](../Imagens/Imagens_Readme_BI/ticket%20medio.jpg)
+
 
 
 ---
@@ -58,13 +59,15 @@ Transformar dados do Data Warehouse em análises executivas e insights estratég
 ## Receita por atividade
 - receita_atividade.png
 
-![Atividades](./Imagens/Imagens_Readme_BI/Receita_Atividades.png)
+![Receita por Atividade](../Imagens/Imagens_Readme_BI/Receita_Atividades.png)
+
 
 
 ---
 ## Impacto financeiro das atividades
 
-![Impacto](./Imagens/Imagens_Readme_BI/impacto.jpg)
+![Impacto Financeiro](../Imagens/Imagens_Readme_BI/impacto.jpg)
+
 
 
 ---
