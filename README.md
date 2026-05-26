@@ -42,7 +42,7 @@ Identificar os fatores responsáveis pela queda de receita da academia em 2023, 
 
 O projeto foi estruturado utilizando arquitetura medalhão:
 
-![Arquitetura do Projeto](https://github.com)
+(https://github.com/VivianeAndrade1988/Projeto_Analise_Receita_FitnessLife/blob/main/Imagens/Imagens_Readme_Principal/ArquiteturaProjeto.png)
 <img width="700" height="200" alt="arquitetura_medalhao" src="https://github.com/user-attachments/assets/eacbd73b-240a-4a56-be8b-faacb09f25d2" />
 
 ---
