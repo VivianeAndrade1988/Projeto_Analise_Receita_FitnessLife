@@ -41,7 +41,8 @@ Identificar os fatores responsáveis pela queda de receita da academia em 2023, 
 # 🧱 Arquitetura do Projeto
 
 O projeto foi estruturado utilizando arquitetura medalhão:
-![Arquitetura do Projeto](https://githubusercontent.com)
+![Arquitetura do Projeto](./Imagens/Imagens_Readme_Principal/ArquiteturaProjeto.png)
+
 
 <img width="700" height="200" alt="arquitetura_medalhao" src="https://github.com/user-attachments/assets/eacbd73b-240a-4a56-be8b-faacb09f25d2" />
 
