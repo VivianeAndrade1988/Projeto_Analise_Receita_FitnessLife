@@ -56,18 +56,18 @@ Transformar dados do Data Warehouse em análises executivas e insights estratég
 ## Receita por atividade
 - receita_atividade.png
 
-![Ticket Medio](./Imagens/Imagens_Readme_BI/Receita_Atividades.png)
+![Atividades](./Imagens/Imagens_Readme_BI/Receita_Atividades.png)
 
 
 ---
 ## Impacto financeiro das atividades
 
-![Ticket Medio](./Imagens/Imagens_Readme_BI/impacto.jpg)
+![Impacto](./Imagens/Imagens_Readme_BI/impacto.jpg)
 
 
 ---
 ## Receita por plano
-![Ticket Medio](./Imagens/Imagens_Readme_BI/planos.jpg)
+![Planos](./Imagens/Imagens_Readme_BI/planos.jpg)
 
 ---
 
