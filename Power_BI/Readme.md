@@ -72,7 +72,7 @@ Transformar dados do Data Warehouse em análises executivas e insights estratég
 
 ---
 ## Receita por plano
-![Planos](./Imagens/Imagens_Readme_BI/planos.jpg)
+![Receita por Plano](../Imagens/Imagens_Readme_BI/planos.jpg)
 
 ---
 
