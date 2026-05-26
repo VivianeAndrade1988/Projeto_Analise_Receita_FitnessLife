@@ -41,7 +41,8 @@ Transformar dados do Data Warehouse em análises executivas e insights estratég
 
 ---
 ## Receita ao longo do tempo
-![Receita](../Imagens/Imagens_Readme_BI/receita..jpg)
+![Receita ao longo do tempo](../Imagens/Imagens_Readme_BI/receita...jpg)
+
 
 
 
