@@ -36,7 +36,8 @@ Entretanto, em 2023:
 - a monetização da operação deteriorou
 
 
-<img width="600" height="300" alt="receita" src="https://github.com/user-attachments/assets/5dba8d27-76f1-4834-9f6a-a21ed7df1582" />
+![Receita ao longo do tempo](../Imagens/Imagens_Readme_BI/receita...jpg)
+
 
 ---
 # Pergunta de Negócio
@@ -69,7 +70,8 @@ A análise foi conduzida em quatro etapas principais:
 
 ## 1) Apesar do crescimento de 19% da base de clientes, o ticket médio caiu 37%, indicando deterioração da monetização
 
-<img width="800" height="300" alt="receita" src="https://github.com/user-attachments/assets/320bb8bd-84fe-45ab-b193-036d29a846ee" />
+![Clientes vs Ticket Médio](../Imagens/Imagens_Readme_BI/ticket%20medio.jpg)
+
 
 Insight: A empresa continuou expandindo a base de clientes, porem com deterioração significativa do valor médio gerado por cliente.
 
@@ -79,7 +81,8 @@ Insight: A empresa continuou expandindo a base de clientes, porem com deteriora�
 
 A retração ocorreu de forma relativamente uniforme entre os planos.
 
-<img width="600" height="300" alt="planos" src="https://github.com/user-attachments/assets/4fd879f9-f7e2-4a0d-b208-84c091ecea54" />
+![Receita por Plano](../Imagens/Imagens_Readme_BI/planos.jpg)
+
 
 Insight: 
 Não houve concentração do problema em um plano específico.
