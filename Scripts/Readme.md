@@ -107,7 +107,8 @@ fato_receita
 
 # ⭐ Modelo Estrela
 
-<img width="700" height="400" alt="STAR SCHEMA" src="https://github.com/user-attachments/assets/7c598249-a3e4-4304-af5b-66c8dabb2e09" />
+![Modelo Estrela](../Imagens/Imagens_Readme_Scripts.Sql/satar_schema.png)
+
 
 
 ---
