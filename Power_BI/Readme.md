@@ -12,7 +12,8 @@ Transformar dados do Data Warehouse em análises executivas e insights estratég
 
 # 📌 Dashboard Desenvolvido
 
-<img width="800" height="510" alt="Captura de tela 2026-05-20 131025" src="https://github.com/user-attachments/assets/52a428e8-3e2f-444a-9e70-1868775b74a7" />
+![Dashboard](./Imagens/Imagens_Readme_Principal/Dashboard.png)
+
 
 
 ---
@@ -40,14 +41,14 @@ Transformar dados do Data Warehouse em análises executivas e insights estratég
 
 ---
 ## Receita ao longo do tempo
-<img width="500" height="300" alt="receita" src="https://github.com/user-attachments/assets/8ef2b882-0de1-41ef-a78c-262e87628841" />
+![Receita](./Imagens/Imagens_Readme_BI/receita.jpg)
 
 
 ---
 
 ## Clientes vs Ticket Médio
 
-<img width="500" height="300" alt="ticket medio" src="https://github.com/user-attachments/assets/2a22eac8-0633-4804-aabf-58f0c5343d17" />
+![Ticket Medio](./Imagens/Imagens_Readme_BI/ticket_medio.jpg)
 
 
 ---
@@ -55,18 +56,18 @@ Transformar dados do Data Warehouse em análises executivas e insights estratég
 ## Receita por atividade
 - receita_atividade.png
 
-<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/904f5f07-4637-45e1-b918-c55112ce5937" />
+![Ticket Medio](./Imagens/Imagens_Readme_BI/Receita_Atividades.png)
 
 
 ---
 ## Impacto financeiro das atividades
 
-<img width="500" height="300" alt="impacto" src="https://github.com/user-attachments/assets/4217122d-14f1-4e30-8497-2e47147524d1" />
+![Ticket Medio](./Imagens/Imagens_Readme_BI/impacto.jpg)
 
 
 ---
 ## Receita por plano
-<img width="500" height="300" alt="planos" src="https://github.com/user-attachments/assets/8dd776dc-1e0e-4164-b1ad-5fa1e61f8ba0" />
+![Ticket Medio](./Imagens/Imagens_Readme_BI/planos.jpg)
 
 ---
 
