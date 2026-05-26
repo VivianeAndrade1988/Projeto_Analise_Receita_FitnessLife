@@ -84,6 +84,7 @@ A saída do professor responsável pela modalidade comprometeu:
 
 <img width="1000" height="500" alt="Captura de tela 2026-05-20 131025" src="https://github.com/user-attachments/assets/30482342-8a2a-438f-b2bd-d3123bafd932" />
 
+![Dashboard Completo](../imagens/dashboard.png)
 ---
 
 # 🔍 Principais Descobertas
