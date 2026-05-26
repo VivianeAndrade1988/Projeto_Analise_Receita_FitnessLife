@@ -1,4 +1,4 @@
-<img width="1800" height="700" alt="Imagem12" src="https://github.com/user-attachments/assets/e78c7b5d-b148-4146-8112-8d03b27ad2d7" />
+![Capa](../Imagens/Imagens_Readme_BI/Capa.jpg)
 
 
 
@@ -46,22 +46,13 @@ Entretanto, em 2023:
 
 ---
 
-
-
-# Estruturação do Problema
-
-A investigação foi estruturada utilizando Árvore de Problemas.
-
-<img width="700" height="300" alt="arvore" src="https://github.com/user-attachments/assets/76b5ca25-1dde-46f4-a653-7002d3b1eeb1" />
-
----
 # Metodologia da Investigação
 
 A análise foi conduzida em quatro etapas principais:
 
 
 
-<img width="700" height="200" alt="investigação" src="https://github.com/user-attachments/assets/6f6c77e0-6fd9-431a-9662-75cd8990eed7" />
+![Investigação](../Imagens/Imagens_Readme_BI/investigação.jpg)
 
 
 ---
@@ -107,8 +98,7 @@ O motivo da queda no faturamento na atividade Cross Trainign, foi a descontinuid
 
 Saída do professor de Cross Training gerou descontinuidade operacional e perda relevante de receita.
 
-
-<img width="900" height="260" alt="investigação" src="https://github.com/user-attachments/assets/ebb7880b-045a-42e3-abf5-094bb7306e4f" />
+![Causa Raiz](../Imagens/Imagens_Readme_BI/Causa_raiz.png)
 
 insight:
 A descontinuação do Cross Training reduziu a capacidade da academia de monetizar a sua base de clientes, deteriorando o ticket médio mesmo com crescimento da operação.
@@ -121,7 +111,7 @@ A descontinuação do Cross Training reduziu a capacidade da academia de monetiz
 
 Em 2023, a receita caiu 24%, apesar do crescimento de 19% na base de clientes, devido a queda do ticket médio e a descontinuação do Cross Training em março de 2023.
 
-<img width="900" height="260" alt="Imagem8" src="https://github.com/user-attachments/assets/d910bbe7-5d77-4251-9c05-174145258c74" />
+![Implicações](../Imagens/Imagens_Readme_BI/Implicações.jpg)
 
 
   
@@ -133,13 +123,13 @@ Para garantir a sustentabilidade da operação é essencial recuperar a capacida
 
 # Recomendações Estratégicas
 
-<img width="900" height="260" alt="recomendaçoes" src="https://github.com/user-attachments/assets/e2b91a57-a9ce-49b9-a0c6-e8ea14f9094f" />
+![Recomendações](../Imagens/Imagens_Readme_BI/recomendações.jpg)
 
 ---
 
 
 # Próximos passos
-<img width="800" height="500" alt="passos" src="https://github.com/user-attachments/assets/bfa6ed65-0607-40c7-9eca-783766ef4884" />
+![Passos](../Imagens/Imagens_Readme_BI/passos.jpg)
 
 
 
