@@ -1,4 +1,4 @@
-# 📊 Projeto FitnessLife
+#  Projeto FitnessLife
 
 Projeto completo de análise de dados com:
 
@@ -10,7 +10,7 @@ Projeto completo de análise de dados com:
 - Storytelling com Dados
 
 ---
-# 📌 Visão Geral
+#  Visão Geral
 
 O projeto foi desenvolvido de ponta a ponta, seguindo uma arquitetura moderna de dados em camadas Bronze, Silver e Gold, contemplando:
 
@@ -25,20 +25,20 @@ O projeto foi desenvolvido de ponta a ponta, seguindo uma arquitetura moderna de
 - ✅ Identificação de Causa Raiz
 ---
 
-# 🎯 Objetivo do Projeto
+#  Objetivo do Projeto
 
 Identificar os fatores responsáveis pela queda de receita da academia em 2023, mesmo com crescimento da base de clientes.
 
 ---
 
-# ❓ Pergunta de Negócio
+#  Pergunta de Negócio
 
 > Por que a receita caiu em 2023 apesar do aumento da quantidade de clientes?
 
 
 ---
 
-# 🧱 Arquitetura do Projeto
+#  Arquitetura do Projeto
 
 O projeto foi estruturado utilizando arquitetura medalhão:
 ![Arquitetura do Projeto](./Imagens/Imagens_Readme_Principal/ArquiteturaProjeto.png)
@@ -47,7 +47,7 @@ O projeto foi estruturado utilizando arquitetura medalhão:
 
 ---
 
-# 🌳 Estruturação do Problema
+#  Estruturação do Problema
 
 A investigação foi conduzida utilizando:
 
@@ -56,7 +56,7 @@ A investigação foi conduzida utilizando:
 
 ---
 
-# 📌 Principais Insights
+#  Principais Insights
 
 | Indicador | Resultado |
 |---|---|
@@ -67,7 +67,7 @@ A investigação foi conduzida utilizando:
 
 ---
 
-# 🚨 Diagnóstico Executivo
+#  Diagnóstico Executivo
 
 A receita apresentou retração significativa devido à deterioração da monetização da base de clientes, impulsionada principalmente pela descontinuação da modalidade Cross Training em março de 2023.
 
@@ -80,31 +80,31 @@ A saída do professor responsável pela modalidade comprometeu:
 
 ---
 
-# 📈 Dashboard Power BI
+#  Dashboard Power BI
 
 ![Dashboard](./Imagens/Imagens_Readme_Principal/Dashboard.png)
 
 
 ---
 
-# 🔍 Principais Descobertas
+#  Principais Descobertas
 
-## 1️⃣ Crescimento sem monetização
+## 1️ Crescimento sem monetização
 
 Apesar do crescimento da base de clientes de 19%, houve queda relevante de -37% do ticket médio.
 
-## 2️⃣ Queda distribuída entre os planos
+## 2️ Queda distribuída entre os planos
 
 Os planos apresentaram retração semelhante, descartando concentração do problema em um único plano.
 
-## 3️⃣ Cross Training concentrou as perdas
+## 3️ Cross Training concentrou as perdas
 
 A modalidade foi responsável por aproximadamente 70% da queda total da receita, totalizando uma queda de R$-525 Mil. E o motivo foi a saída do professor desta modalidade em março de 2023. 
 
 
 ---
 
-# 📂 Estrutura do Repositório
+#  Estrutura do Repositório
 
 ```bash
 FitnessLife
@@ -132,12 +132,12 @@ FitnessLife
 ---
 
 
-# 📘 Documentações Técnicas
+#  Documentações Técnicas
 
 - [SQL & Data Engineering](https://github.com/VivianeAndrade1988/Projeto_Analise_Receita_FitnessLife/blob/main/Scripts/Readme.md)
 - [Power BI & Analytics](https://github.com/VivianeAndrade1988/Projeto_Analise_Receita_FitnessLife/blob/main/Power_BI/Readme.md)
 
-# 📘 Apresentação executiva
+#  Apresentação executiva
 
 Neste link tem toda a análise, desde o entendimento do problema, causa raiz, recomendações e próximos passos.
 
@@ -148,7 +148,7 @@ Neste link tem toda a análise, desde o entendimento do problema, causa raiz, re
 
 ---
 
-# 🚀 Competências Demonstradas
+#  Competências Demonstradas
 
 ✅ SQL Server  
 ✅ Data Warehouse  
