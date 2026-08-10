@@ -86,7 +86,7 @@ O padrão reforça hipótese de perda de monetização geral da operação.
 
 Enquanto as demais atividades apresentaram quedas entre -7% e -10%, Cross Training teve retração de -86%, gerando maior impacto negativo da receita.
 
-<img width="800" height="300" alt="atividade" src="https://github.com/user-attachments/assets/3045b09b-bf3c-48f8-ab2a-ec8fe0fac4cd" />
+![Receita Atividade](../Imagens/Imagens_Readme_BI/Receita_Atividades.png)
 
 Insight:
 O motivo da queda no faturamento na atividade Cross Trainign, foi a descontinuidade desta modalidade, devido a saída do professor. 
