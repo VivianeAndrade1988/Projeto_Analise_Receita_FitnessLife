@@ -1,17 +1,17 @@
 
-# 🗄️ SQL Documentação
+#  SQL Documentação
 
 Documentação técnica da estrutura analítica desenvolvida no SQL Server.
 
 ---
 
-# 🎯 Objetivo
+#  Objetivo
 
 Construir um ambiente analítico escalável para suportar análises de receita e consumo no Power BI.
 
 ---
 
-# 🧱 Arquitetura Medalhão
+#  Arquitetura Medalhão
 
 O projeto foi dividido em 3 camadas:
 
@@ -21,9 +21,9 @@ Bronze → Silver → Gold
 
 ---
 
-# ⚙️ Estrutura Técnica
+#  Estrutura Técnica
 
-## 1️⃣ Inicialização do Banco: 
+## 1️) Inicialização do Banco: 
 
 Foi criado o banco de dados com dados ficticios com apoio da IA, o cenário ficou exatamente como planejei.
 
@@ -42,7 +42,7 @@ atividades
 ```
 ---
 
-## 2️⃣ Criação dos Schemas
+## 2️) Criação dos Schemas
 
 ```sql
 CREATE SCHEMA bronze;
@@ -52,7 +52,7 @@ CREATE SCHEMA gold;
 
 ---
 
-# 🥉 Camada Bronze (Raw Data)
+#  Camada Bronze (Raw Data)
 
 Responsável por armazenar os dados brutos.
 
@@ -74,7 +74,7 @@ bronze_atividades
 
 ---
 
-# 🥈 Camada Silver (Trusted Data)
+#  Camada Silver (Trusted Data)
 
 Camada responsável por tratamento e padronização.
 
@@ -89,7 +89,7 @@ Camada responsável por tratamento e padronização.
 
 ---
 
-# 🥇 Camada Gold (Business Layer)
+#  Camada Gold (Business Layer)
 
 Camada analítica voltada para consumo BI.
 
@@ -105,7 +105,7 @@ fato_receita
 
 ---
 
-# ⭐ Modelo Estrela
+#  Modelo Estrela
 
 
 ![Modelagem Star Schema](../Imagens/Imagens_Readme_Scripts.Sql/star_schema.png)
@@ -114,7 +114,7 @@ fato_receita
 
 ---
 
-# 📊 Views Analíticas
+#  Views Analíticas
 
 ## Views criadas
 
@@ -128,7 +128,7 @@ vw_dim_data
 
 ---
 
-# 📈 Queries Analíticas
+#  Queries Analíticas
 
 ## Receita por Ano
 
@@ -169,7 +169,7 @@ GROUP BY nome_atividade, ano;
 
 ---
 
-# 🚀 Competências Demonstradas
+#  Competências Demonstradas
 
 - ✅ SQL Server
 - ✅ Engenharia de Dados
