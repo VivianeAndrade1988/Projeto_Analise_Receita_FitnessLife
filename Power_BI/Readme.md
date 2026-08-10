@@ -1,16 +1,16 @@
-# 📊 Power BI | Analytics
+#  Power BI | Analytics
 
 Documentação analítica do dashboard desenvolvido no Power BI.
 
 ---
 
-# 🎯 Objetivo
+#  Objetivo
 
 Transformar dados do Data Warehouse em análises executivas e insights estratégicos sobre receita, monetização e performance operacional.
 
 ---
 
-# 📌 Dashboard Desenvolvido
+#  Dashboard Desenvolvido
 
 ![Dashboard](../Imagens/Imagens_Readme_Principal/Dashboard.png)
 
@@ -18,7 +18,7 @@ Transformar dados do Data Warehouse em análises executivas e insights estratég
 
 ---
 
-# 📈 KPIs Desenvolvidos
+#  KPIs Desenvolvidos
 
 | KPI | Objetivo |
 |---|---|
@@ -30,7 +30,7 @@ Transformar dados do Data Warehouse em análises executivas e insights estratég
 
 ---
 
-# 📊 Visualizações Desenvolvidas
+#  Visualizações Desenvolvidas
 
 ✅ Evolução da Receita vs Ano Anterior  
 ✅ Clientes vs Ticket Médio  
@@ -76,7 +76,7 @@ Transformar dados do Data Warehouse em análises executivas e insights estratég
 
 ---
 
-# 📐 Principais Medidas DAX
+#  Principais Medidas DAX
 
 ## Receita Total
 
@@ -124,7 +124,7 @@ DIVIDE(
 
 ---
 
-# 🧠 Principais Insights Analíticos
+#  Principais Insights Analíticos
 
 - Receita caiu 25% vs 2022
 - Ticket médio reduziu 37%
@@ -134,7 +134,7 @@ DIVIDE(
 
 ---
 
-# 🎨 Recursos Utilizados
+#  Recursos Utilizados
 
 ✅ Power BI  
 ✅ DAX  
