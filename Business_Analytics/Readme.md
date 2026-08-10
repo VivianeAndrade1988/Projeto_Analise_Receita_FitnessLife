@@ -123,7 +123,7 @@ Para garantir a sustentabilidade da operação é essencial recuperar a capacida
 
 # Recomendações Estratégicas
 
-![Recomendações](../Imagens/Imagens_Readme_BI/recomendações.jpg)
+![Recomendações](../Imagens/Imagens_Readme_BI/recomendaçoes.jpg)
 
 ---
 
