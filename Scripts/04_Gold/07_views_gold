@@ -6,7 +6,7 @@ ETAPA: Camada Gold - Camada Semântica (Views)
 DESCRIÇÃO: 
     Este script cria as estruturas de visualização na camada Gold.
     A lógica consiste em:
-    1. Validar a existência de views anteriores (CREATE OR ALTER).
+    1. Validar a existência de views anteriores (CREATE VIEW).
     2. Responder a dores de negócio mapeadas na Árvore de Problemas.
     3. Facilitar o consumo direto dos dados por ferramentas de BI.
 =============================================================================
