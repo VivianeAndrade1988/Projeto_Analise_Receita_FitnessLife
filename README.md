@@ -104,10 +104,10 @@ A modalidade foi responsável por aproximadamente 70% da queda total da receita,
 
 ---
 
-## 🧮 SQL em destaque
+## SQL em destaque
 
 A camada Gold (`Scripts/05_views.sql`) transforma o modelo estrela em **views semânticas**, cada uma
-respondendo a um ramo da Árvore de Problemas. O Power BI consome essas views diretamente.
+respondendo a um ramo da Árvore de Problemas. 
 
 | View | Pergunta de negócio | Técnicas |
 |---|---|---|
